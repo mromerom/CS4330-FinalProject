@@ -1,9 +1,9 @@
 # Object Oriented Language Comparison
 ## Java vs. Swift
 ## provided by David Duenow, Payton Hosna, Matthew Romero Moore
-### 4330 Final Project
-### provided by Dr. Dale Musser, Univ. Missouri-Columbia
-
+### _4330 Final Project_
+### _provided by Dr. Dale Musser, Univ. Missouri-Columbia_
+<span style="color:blue">some *This is Blue italic.* text</span>
 ## The languages will be compared by the following list of topics.
 ### _Each item will be found within the 'Topics' folder and will be listed as its own folder within 'Topics.' The documents inside will consist of a comparison document and example code._
 * Birth
@@ -51,10 +51,10 @@
 	* written by: Payton Hosna
 	* reviewed by:
 * Null and Nil
-	* This topic will go over how the languages use null and nil.
+	* This topic will go over how the languages use null and/ or nil.
 	* written by: Payton Hosna
 	* reviewed by:
-* Erors and Exception Handling
+* Errors and Exception Handling
 	* This topic will go over how the languages deal with errors and exceptions.
 	* written by: Payton Hosna
 	* reviewed by:
@@ -64,7 +64,7 @@
 	* reviewed by:
 * Event Handlers and Listeners
 	* This topic will go over how the languages implement/ use event handlers and listeners.
-	* written by: Payton Hosna
+	* written by:
 	* reviewed by:
 * Singleton
 	* This topic will go over how the languages implement singletons.
