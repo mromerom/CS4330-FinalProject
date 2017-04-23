@@ -7,8 +7,8 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 ## The languages will be compared by the following list of topics.
 #### _Each item will be found within the 'Topics' folder and will be listed as its own folder within 'Topics.' The documents inside will consist of a comparison document explaining and comparing the topic in each language and code examples._
 * Birth
-	* This topic will go over the factors that led to the languages' geneses.
-	* written by: Payton Hosna
+	* This topic will go over the factors that led to each languages' genesis.
+	* written by: **Payton Hosna**
 	* reviewed by:
 * Unique Features
 	* This topic will go over any special or unique features provided by this language.
@@ -40,7 +40,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 	* reviewed by:
 * Inheritance and Extension
 	* This topic will go over inheritance and extensions of classes.
-	* written by: Payton Hosna
+	* written by: **Payton Hosna**
 	* reviewed by:
 * Reflection
 	* This topic will go over reflection and its support by the languages.
@@ -48,7 +48,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 	* reviewed by:
 * Comparisons of References and Values
 	* This topic will go over how values are compared.
-	* written by: Payton Hosna
+	* written by: **Payton Hosna**
 	* reviewed by:
 * Null and Nil
 	* This topic will go over how the languages use null and/ or nil.
@@ -56,11 +56,11 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 	* reviewed by:
 * Errors and Exception Handling
 	* This topic will go over how the languages deal with errors and exceptions.
-	* written by: Payton Hosna
+	* written by: **Payton Hosna**
 	* reviewed by:
 * Lambda Expression, Closures, and Functions as Types
 	* This topic will go over how the languages implement/ use lambda expressions, closures, and functions as types.
-	* written by: Payton Hosna
+	* written by: **Payton Hosna**
 	* reviewed by:
 * Event Handlers and Listeners
 	* This topic will go over how the languages implement/ use event handlers and listeners.
@@ -68,7 +68,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 	* reviewed by:
 * Singleton
 	* This topic will go over how the languages implement singletons.
-	* written by: Payton Hosna
+	* written by: **Payton Hosna**
 	* reviewed by:
 * Procedural Programming
 	* This topic will go over the languages' support of procedural programming.
