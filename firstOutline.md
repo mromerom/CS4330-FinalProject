@@ -2,11 +2,11 @@
 ## Java vs. Swift
 ## provided by David Duenow, Payton Hosna, Matthew Romero Moore
 #### _4330 Final Project provided by Dr. Dale Musser, Univ. Missouri-Columbia_
-
-
+#
+#
 
 ## The languages will be compared by the following list of topics.
-### _Each item will be found within the 'Topics' folder and will be listed as its own folder within 'Topics.' The documents inside will consist of a comparison document explaining and comparing the topic in each language and code examples._
+#### _Each item will be found within the 'Topics' folder and will be listed as its own folder within 'Topics.' The documents inside will consist of a comparison document explaining and comparing the topic in each language and code examples._
 * Birth
 	* This topic will go over the factors that led to the languages' geneses.
 	* written by: Payton Hosna
