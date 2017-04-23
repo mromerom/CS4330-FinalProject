@@ -3,7 +3,7 @@
 ## provided by David Duenow, Payton Hosna, Matthew Romero Moore
 ### _4330 Final Project_
 ### _provided by Dr. Dale Musser, Univ. Missouri-Columbia_
-<span style="color:blue">some *This is Blue italic.* text</span>
+
 ## The languages will be compared by the following list of topics.
 ### _Each item will be found within the 'Topics' folder and will be listed as its own folder within 'Topics.' The documents inside will consist of a comparison document and example code._
 * Birth
