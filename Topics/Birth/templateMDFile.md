@@ -1,12 +1,6 @@
-# Hello!
-## Please use me to develop the documentation for this topic!
+# Language Purpose/ Genesis
+## This topic will go over the following queries:
+### Why was the language created?
+### What problems was the language trying to address?
+### Is the language a reaction to a previous language or a replacement for another language?
 
-# I'm and h1!
-## I'm and h2!
-### I'm and h3!
-
-* I'm and unordered list
-	* I'm a sub unordered list!
-
-1. I'am an ordered list.
-	1. I'm a sub ordered list!
