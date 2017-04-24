@@ -1,8 +1,8 @@
 # Language Purpose/ Genesis
-## This topic will go over the following queries:
-* ### Why was the language created?
-* ### What problems was the language trying to address?
-* ### Is the language a reaction to a previous language or a replacement for another language?
+### This topic will go over the following queries:
+* #### Why was the language created?
+* #### What problems was the language trying to address?
+* #### Is the language a reaction to a previous language or a replacement for another language?
 <br></br>
 ## Java
 #### _We'll begin with Java, as it is much older than Swift._
@@ -21,8 +21,9 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
     > All the pieces of java were to come together. They made it so that it actually came with its own compiler and debugging software. For most other languages, at the time, support came separately and needed to be downloaded and may have even needed to be connected with other support software.
 4. Execute from remote sources securely
 5. Easy to use
-    > Java was to be a combination of all the 'better' parts of OOP. If everyone took everything thing that they liked and was considered useful (and **needed**), then a 'perfect' language would be created. <br></br>
-    OOP was designed to make code modularized and 'simple.' Combining everything that worked had seemed like the great new breakthrough the developers of Java, and everyone else, was looking for.
+    1. Java was to be a combination of all the 'better' parts of OOP. 
+        1. If everyone took everything thing that they liked and was considered useful (and **needed**), then a 'perfect' language would be created.
+    2. OOP was designed to make code modularized and 'simple.' Combining everything that worked had seemed like the great new breakthrough the developers of Java, and everyone else, was looking for.
 
 Java was developed more to combine aspects of a new and radical programming ideal than to *actively* replace other languages; however, because of the mostly positive response to OOP, it came to replace many of the popular languages at the time, such as C and C++.
 
