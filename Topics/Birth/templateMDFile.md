@@ -33,5 +33,13 @@ Java was developed more to combine aspects of a new and radical programming idea
 [Apple states](https://www.apple.com/swift/):
 > "Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch. It’s designed to give developers more freedom than ever. Swift is easy to use and open source, so anyone with an idea can create something incredible."
 
+Why section
+    why did apple devs want to
+        what did they think it helped fix
+    motivation
+
+Reaction/ replacement section
+    what they want to replace
+        also what they thought it would help fix
 
 
