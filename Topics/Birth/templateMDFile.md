@@ -18,7 +18,7 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
     * Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive.
     * *Please see javaCodeExample2 for further explanation* **PUT A HYPERLINK HERE**
 2. Execution on multiple operating systems
-  a. There was a large issue with 'platform independence' when coding came about. One could not simply write a program and try to run it on all platforms one is using. 
+ 1.There was a large issue with 'platform independence' when coding came about. One could not simply write a program and try to run it on all platforms one is using. 
   b. Java developers created a Java byte language that would be converted to the machine's 'native' language for execution and running.
   c. Furthermore, standardized libraries were developed to allow for easier implementation of threading and graphics, etc.
 3. Built-in support
