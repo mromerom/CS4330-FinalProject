@@ -5,6 +5,7 @@
 * ### Is the language a reaction to a previous language or a replacement for another language?
 <br>
 ## Java
+<br>
 #### _We'll begin with Java, as it is much older than Swift._
 
 Java was developed in 1995 to [union digital consumer devices and the internet](http://www.oracle.com/technetwork/java/javase/overview/javahistory-index-198355.html). It would replace C/ C++, enable the creation of web applications, have portability, and operate in distributed environments.
