@@ -11,7 +11,11 @@ Java was developed in 1995 to [union digital consumer devices and the internet](
 
 There were [five main goals](http://www.freejavaguide.com/history.html) Java was developed for (ie. the problems Java was made to address):
 1. Object Oriented Programming (OOP)
-  > This style of programming was developed so that similar elements are grouped together.<br></br>*Please see javaCodeExample1 for further explanation* **PUT A HYPERLINK HERE**<br></br> It was also developed to create more generic software that could be **reused**.<br></br>Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive. <br></br>*Please see javaCodeExample2 for further explanation* **PUT A HYPERLINK HERE**
+    > This style of programming was developed so that similar elements are grouped together.
+    *Please see javaCodeExample1 for further explanation* **PUT A HYPERLINK HERE**
+    It was also developed to create more generic software that could be **reused**.
+    Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive. 
+    *Please see javaCodeExample2 for further explanation* **PUT A HYPERLINK HERE**
 2. Execution on multiple operating systems
  1.There was a large issue with 'platform independence' when coding came about. One could not simply write a program and try to run it on all platforms one is using. 
   b. Java developers created a Java byte language that would be converted to the machine's 'native' language for execution and running.
