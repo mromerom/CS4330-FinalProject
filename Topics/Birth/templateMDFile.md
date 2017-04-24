@@ -12,24 +12,24 @@ Java was developed in 1995 to [union digital consumer devices and the internet](
 
 There were [five main goals](http://www.freejavaguide.com/history.html) Java was developed for (ie. the problems Java was made to address):
 1. Object Oriented Programming (OOP)
-  1. This style of programming was developed so that similar elements are grouped together.
-    1. *Please see javaCodeExample1 for further explanation* **PUT A HYPERLINK HERE**
-  1. It was also developed to create more generic software that could be **reused**.
-    1. Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive.
-    1. *Please see javaCodeExample2 for further explanation* **PUT A HYPERLINK HERE**
+  a. This style of programming was developed so that similar elements are grouped together.
+    i. *Please see javaCodeExample1 for further explanation* **PUT A HYPERLINK HERE**
+  b. It was also developed to create more generic software that could be **reused**.
+    i. Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive.
+    ii. *Please see javaCodeExample2 for further explanation* **PUT A HYPERLINK HERE**
 2. Execution on multiple operating systems
-  1. There was a large issue with 'platform independence' when coding came about. One could not simply write a program and try to run it on all platforms one is using. 
-  2. Java developers created a Java byte language that would be converted to the machine's 'native' language for execution and running.
-  3. Furthermore, standardized libraries were developed to allow for easier implementation of threading and graphics, etc.
+  a. There was a large issue with 'platform independence' when coding came about. One could not simply write a program and try to run it on all platforms one is using. 
+  b. Java developers created a Java byte language that would be converted to the machine's 'native' language for execution and running.
+  c. Furthermore, standardized libraries were developed to allow for easier implementation of threading and graphics, etc.
 3. Built-in support
-  1. All the pieces of java were to come together. 
-  2. They made it so that it had its own compiler and debugging software.
-  3. For most other languages, support came separately and needed to be downloaded and may have needed to be connected with other support software.
+  a. All the pieces of java were to come together. 
+  b. They made it so that it had its own compiler and debugging software.
+  c. For most other languages, support came separately and needed to be downloaded and may have needed to be connected with other support software.
 4. Execute from remote sources securely
 5. Easy to use
-  1. Java was to be a combination of all the 'better' parts of OOP.
-    1. If everyone took everything thing that they liked and was considered useful (and **needed**), then a 'perfect' language would be created.
-    2. OOP was designed to make code modularized and 'simple.' Combining everything that worked had seemed like the great new breakthrough the developers of Java, and everyone else, was looking for.
+  a. Java was to be a combination of all the 'better' parts of OOP.
+    i. If everyone took everything thing that they liked and was considered useful (and **needed**), then a 'perfect' language would be created.
+    ii. OOP was designed to make code modularized and 'simple.' Combining everything that worked had seemed like the great new breakthrough the developers of Java, and everyone else, was looking for.
 
 Java was developed more to combine aspects of a new and radical programming ideal than to *actively* replace other languages; however, because of the mostly positive response to OOP, it came to replace many of the popular languages at the time, such as C and C++.
 
