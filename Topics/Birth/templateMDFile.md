@@ -20,10 +20,10 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
 3. Built-in support
     > All the pieces of java were to come together. They made it so that it actually came with its own compiler and debugging software. For most other languages, at the time, support came separately and needed to be downloaded and may have even needed to be connected with other support software.
 4. Execute from remote sources securely
+    > Secure execution of a programming is extremely important to protect data. Making that execution remote would allow for more difficult access to data from those who would try to compromise the software's protection and access data.
 5. Easy to use
-    1. Java was to be a combination of all the 'better' parts of OOP. 
-        1. If everyone took everything thing that they liked and was considered useful (and **needed**), then a 'perfect' language would be created.
-    2. OOP was designed to make code modularized and 'simple.' Combining everything that worked had seemed like the great new breakthrough the developers of Java, and everyone else, was looking for.
+    > Java was to be a combination of all the 'better' parts of OOP. If everyone took everything thing that they liked and was considered useful (and **needed**), then a 'perfect' language would be created.  <br></br>
+    OOP was designed to make code modularized and 'simple.' Combining everything that worked had seemed like the great new breakthrough the developers of Java, and everyone else, was looking for.
 
 Java was developed more to combine aspects of a new and radical programming ideal than to *actively* replace other languages; however, because of the mostly positive response to OOP, it came to replace many of the popular languages at the time, such as C and C++.
 
