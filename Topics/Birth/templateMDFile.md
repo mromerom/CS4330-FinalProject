@@ -3,9 +3,9 @@
 * ### Why was the language created?
 * ### What problems was the language trying to address?
 * ### Is the language a reaction to a previous language or a replacement for another language?
-<br>
+<br></br>
 ## Java
-<br>
+<br></br>
 #### _We'll begin with Java, as it is much older than Swift._
 
 Java was developed in 1995 to [union digital consumer devices and the internet](http://www.oracle.com/technetwork/java/javase/overview/javahistory-index-198355.html). It would replace C/ C++, enable the creation of web applications, have portability, and operate in distributed environments.
@@ -33,5 +33,5 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
 
 Java was developed more to combine aspects of a new and radical programming ideal than to *actively* replace other languages; however, because of the mostly positive response to OOP, it came to replace many of the popular languages at the time, such as C and C++.
 
-<br>
+<br></br>
 ## Swift
