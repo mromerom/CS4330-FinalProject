@@ -23,7 +23,7 @@ The most important aspect of OOP are the principles _(the first four are the mai
 2. Encapsulation
 3. Polymorphism
 4. Inheritance
-    1. This will be addressed 
+    *This will be addressed in 'Inheritance and Extension.'*
 5. Composition
 
 <br></br>
