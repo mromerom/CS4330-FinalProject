@@ -39,11 +39,11 @@ public class Cabbage extends Vegetable{
   // other behaviours
 }
 
-public class January_King_Cabbage extends Cabbage{
+public class January_King extends Cabbage{
   double weight;
   // other states
   
-  public January_King_Cabbage(double weight){
+  public January_King(double weight){
       this.weight = weight;
   }
   
@@ -61,8 +61,49 @@ public class January_King_Cabbage extends Cabbage{
 ## Swift's Implementation
 #### *Swift is written here using Python markdown, as Swift markdown is not yet supported*
 ```python
+class Vegetable{
+  var kindOfFood = "Vegetable"
+  var weight
+  
+  init(weight: double){
+  }
+  
+  func printWeight(){
+    print(weight);
+  } 
+}
+
+class Cabbage{
+  var weight
+  
+  init(weight: double){
+  }
+  
+  func printWeight(){
+    print(weight);
+  }
+}
+
+class January_King{
+  var weight
+  
+  init(weight: double){
+  }
+  
+  func printWeight(){
+    print(weight);
+  }
+}
+
+// the printWeight() in each class would override the one in the parent's class
+// the string called kindOfFood is (if not private) available to all the child classes of Vegetable for manipulation
 ```
 
 <br></br>
 ## Java vs. Swift
+
+
+
+
+
 
