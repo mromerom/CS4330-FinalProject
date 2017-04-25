@@ -5,7 +5,7 @@
 * #### Is the language a reaction to a previous language or a replacement for another language?
 * #### And, most importantly, what _is_ object oriented programming (OOP)?
 <br></br>
-## Object Orientd Programming aka. OOP
+## Object Oriented Programming aka. OOP
 #### _A brief background of what OOP is all about will help you understand later topics in this repository._
 
 OOP has a few basic ideas and concepts. [Every OOP language deals with](https://docs.oracle.com/javase/tutorial/java/concepts/) objects, classes, inheritance, interfaces, and packages. Classes, inheritance, and interfaces will be addressed in their respective folders in 'Topics.'
@@ -20,7 +20,7 @@ A package can be likened to a large folder system, such as 'Topics' in this repo
 
 The most important aspects of OOP are the following four principles:
 1. Abstraction
-   > Abstraction helps programmers focus on important details and ignore any states or behaviours that are not neccessary to software. For example, you work at a university and have Staff objects. Staff members have roles, salaries, a permanent address, a phone number, etc. In order for this 'object' to be useful, the university needs to be able to store their contact information and what they do, so they can refer to it for use in directories, payroll, etc. At no point will you or the university need to know their shoe size, how many children they have, etc. These aspects are _unneccessary_ for the university's Staff object and keeping out those extraneous attributes would be keeping in line with OOP abstraction.
+   > Abstraction helps programmers focus on important details and ignore any states or behaviours that are not necessary to software. For example, you work at a university and have Staff objects. Staff members have roles, salaries, a permanent address, a phone number, etc. In order for this 'object' to be useful, the university needs to be able to store their contact information and what they do, so they can refer to it for use in directories, payroll, etc. At no point will you or the university need to know their shoe size, how many children they have, etc. These aspects are _unnecessary_ for the university's Staff object and keeping out those extraneous attributes would be keeping in line with OOP abstraction.
 2. Encapsulation (or data hiding)
    > "[Through encapsulation](https://www.tutorialspoint.com/object_oriented_analysis_design/ooad_object_oriented_principles.htm), the internal details of a class can be hidden from outside." This concept makes sure the states and behaviours of an object are tied together and prevents it (_should prevent it_) from being directly manipulated by other objects. This enhances security of data.
 3. Polymorphism
@@ -59,7 +59,7 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
           worry about creating the function themselves or taking this one and re-writing the
           input
           it would be much easier to call a function that does it for you
-      *\
+      */
 
       quadraticEquation(a, b, c);
 
@@ -77,7 +77,7 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
       /* this version is much better and less wasting of time, as it is easily
             used by those who can know the name of the function and its parameters
             (what to send the function)
-      *\
+      */
    ```
 
 2. Execution on multiple operating systems
