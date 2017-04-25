@@ -1,3 +1,4 @@
+// NOTE: the change in color is due to GitHub's incomplete Java code blocking compatibility.
 // Option 1
 double a = -16.00;
 double b = 100.00;
