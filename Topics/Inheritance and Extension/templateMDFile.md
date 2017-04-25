@@ -1,5 +1,5 @@
 # Inheritance/ Extension
-## *This document will explain, compare, and give examples of how Java and Swift implement inheritance.*
+#### *This document will explain, compare, and give examples of how Java and Swift implement inheritance.*
 
 
 ## Inheritance and Extension
