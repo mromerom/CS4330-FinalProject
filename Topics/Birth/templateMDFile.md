@@ -3,7 +3,7 @@
 * #### Why was the language created?
 * #### What problems was the language trying to address?
 * #### Is the language a reaction to a previous language or a replacement for another language?
-* #### And, most importantly, what **is** object oriented programming (OOP)?
+* #### And, most importantly, what __is__ object oriented programming (OOP)?
 <br></br>
 ## Object Orientd Programming aka. OOP
 #### _A brief background of what OOP is all about will help you understand later topics in this repository._
