@@ -24,9 +24,7 @@ The most important aspects of OOP are the following four principles:
 2. Encapsulation (or data hiding)
    > "[Through encapsulation](https://www.tutorialspoint.com/object_oriented_analysis_design/ooad_object_oriented_principles.htm), the internal details of a class can be hidden from outside." This concept makes sure the states and behaviours of an object are tied together and prevents it (_should prevent it_) from being directly manipulated by other objects. This enhances security of data.
 3. Polymorphism
-   > This principle is one of the hardest for some people to understand. Essentially, an object is polymorphic if it can have/ take on different forms. For example, a square is a rectangle, but a rectangle is not a square. A square can be identified as a rectangle, and therefore, it has two different formulas for finding the area: 
-      1. area of a square -- side_length^2 **or** 
-      2. area of a rectangle -- width\*height. 
+   > This principle can be difficult to understand. Essentially, an object is polymorphic if it can have/ take on different forms. For example, a square is a rectangle, but a rectangle is not a square. A square can be identified as a rectangle, and therefore, it has two different formulas for finding the area: area_of_square = side_length^2 **or** area_of_rectangle = width\*height. Its sides can also be defined as just side_length, as squares have equal side lengths, or width and height. This means that a square is polymorphic, which means it can 'act' two different ways, as a square *or* a rectangle.
 4. Inheritance
    > *This will be addressed in 'Inheritance and Extension.'*
 
