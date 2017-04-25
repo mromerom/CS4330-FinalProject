@@ -25,13 +25,13 @@ public void quadraticEquation(double a, double b, double c)
 }
  
 /* 
-   option 1 is fine when you're not using the quadratic equation multiple times
+   section 1 (lines 1-11) is fine when you're not using the quadratic equation multiple times
    but imagine many different people needing to use this; wouldn't it be easier to
-   make a copy of the option where people just send their numbers in and don't have to
-   worry about creating the function themselves or taking this one and re-writing the
+   make a copy of the section 1 where people just send their numbers in and don't have to
+   worry about creating the code themselves or taking this one and re-writing the
    input
    it would be much easier to call a function that does it for you
-   option 2 is much better and less wasting of time, as it is easily
+   section 2 (lines 14-25) is much better and wastes less time, as it is easily
       used by those who can know the name of the function and its parameters
       (what to send the function)
 *\
