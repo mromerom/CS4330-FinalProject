@@ -39,7 +39,7 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
     > This style of programming was developed so that similar elements are grouped together.<br></br>
     It was also developed to create more generic software that could be **reused**.
     Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive. <br></br>
-    *[Please see below example code of the quadratic equation](CS4330-FinalProject/Topics/Birth/javaModularizeExample.java)* 
+    *Please see below [example code of the quadratic equation](CS4330-FinalProject/Topics/Birth/javaModularizeExample.java)* 
    ```java
    double a = -16.00;
    double b = 100.00;
