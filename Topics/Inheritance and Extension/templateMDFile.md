@@ -9,11 +9,59 @@ In programming implementation, a 'child' class is said to *extend* a 'parent' cl
 
 <br></br>
 ## Java's Implementation
+```java
+public class Vegetable{
+  double weight;
+  // other states
+  
+  public Vegetable(double weight){
+      this.weight = weight;
+  }
 
+  public void printWeight(){
+      print(weight);
+   } 
+  // other behaviours
+}
+
+public class Cabbage extends Vegetable{
+  String kindOfFood = 'Vegetable';
+  double weight;
+  // other states
+  
+  public Cabbage(double weight){
+      this.weight = weight;
+  }
+
+  public void printWeight(){
+      print(weight);
+   } 
+  // other behaviours
+}
+
+public class January_King_Cabbage extends Cabbage{
+  double weight;
+  // other states
+  
+  public January_King_Cabbage(double weight){
+      this.weight = weight;
+  }
+  
+   public void printWeight(){
+      print(weight);
+   } 
+  // other behaviours
+}
+
+// the printWeight() in each class would override the one in the parent's class
+// the string called kindOfFood is (if not private) available to all the child classes of Vegetable for manipulation
+```
 
 <br></br>
 ## Swift's Implementation
-
+#### *Swift is written here using Python markdown, as Swift markdown is not yet supported*
+```python
+```
 
 <br></br>
 ## Java vs. Swift
