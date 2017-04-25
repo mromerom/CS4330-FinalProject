@@ -5,9 +5,7 @@
 ## Inheritance and Extension
 Inheritance is when an object is built up from another object; this is usually explained as an IS-A relationship. For example, vegetables are healthy foods that humans (should) eat. A cabbage *is* a vegetable, and a carrot *is* a vegetable; in this instance, vegetables would be a 'parent' (extended) class and cabbage and carrot would be two different 'child' (inheriting) classes. Each 'child' of an object is a more specific version of its parent; another example of this is: a january_king **is a** cabbage **is a** vegetable. You can also think of the taxonomic rank, Domain->Kingdom->Phylum->Class->Order->Family->Genus->Species, with each rank/ level getting progressively more specific towards a single kind of animal or plant. 
 
-In programming implementation, a 'child' class is said to *extend* a 'parent' class, and the 'child' class is said to have *inherited* the states and behaviours of the 'parent' class.
-
---> TALK ABOUT ACTUALLY INHERITING STATES AND BEHAVIOURS AND OVERRIDING THEM
+In programming implementation, a 'child' class is said to *extend* a 'parent' class, and the 'child' class is said to have *inherited* the states and behaviours of the 'parent' class. Any non-private states or behaviours that the parent class has declared will be a part of the child class's states and behaviours (note: it will *not* show up in the child class, as the child class is building off the 'foundation' of the parent class).
 
 <br></br>
 ## Java's Implementation
