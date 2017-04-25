@@ -3,6 +3,11 @@
 * #### Why was the language created?
 * #### What problems was the language trying to address?
 * #### Is the language a reaction to a previous language or a replacement for another language?
+* #### And, most importantly, what **is** object oriented programming (OOP)?
+<br></br>
+## Object Orientd Programming aka. OOP
+#### _A brief background of what OOP is all about will help you understand later topics in this repository._
+
 <br></br>
 ## Java
 #### _We'll begin with Java, as it is much older than Swift._
@@ -10,7 +15,7 @@
 Java was developed in 1995 to [union digital consumer devices and the internet](http://www.oracle.com/technetwork/java/javase/overview/javahistory-index-198355.html). It would replace C/ C++, enable the creation of web applications, have portability, and operate in distributed environments.
 
 There were [five main goals](http://www.freejavaguide.com/history.html) Java was developed for (ie. the problems Java was made to address):
-1. Object Oriented Programming (OOP)
+1. OOP
     > This style of programming was developed so that similar elements are grouped together.<br></br>
     It was also developed to create more generic software that could be **reused**.
     Resuability of code, or modularizing code, is one of the most important aspects of computer science. It allows for less storage, cleaner and more readable code. Code should be understandable and not repetitive. <br></br>
