@@ -101,19 +101,19 @@ Java was developed more to combine aspects of a new and radical programming idea
 Programming languages used to be difficult to learn. Languages are, along with becoming much more powerful, becoming easier to use and to learn. To make something, that's difficult to understand, more fun to learn but also powerful, versatile and would "revolutionize."
 
 1. Reduced Learning Curve
-   >
+   > Swift is simpler and less strict. It allows for different learning styles to create programs without much difficulty. It is more flexible and has easy to remember rules and structures.
 2. Fix 'Bad' Behaviours of Objective-C
-   >
+   > Swift eliminates pointers and removes the programmer's control of variable overflow.
 3. Easier, Automated Debugging
-   >
-4. Real-Time Output (REPL)
-   >
+   > It can run and debug clearly in a development environment, using a read-evaluate-print loop (REPL).
+4. Real-Time Output 
+   > This enhances REPL that allows for instantaneous ouput as the programmer changes code or debugs.
 5. Industrial Quality
    > Apple claims that Swift is strong, reliable, and even better to use for developing, for example, medical equipment. The data that would be more secure using Swift than most other languages. Swift is 'on par' with popular and most-used languages.
 6. Automatic Memory Management
-   >
+   > Allows for more accurate and safe memory management.
 
-Swift's simple programming style allows for a reduced learning curves of programming principles. It's slowly trying to develop a world with OOP. It's a more powerful language that is versatile in its use (some even say it was designed to build an Electric Apple vehicle). Swift is becoming the 'next best language,' _(similar to how Java was treated)_ built off of objective-C and similar languages, that will 'take over' the programming world and challenge it to be better and stronger. It was created more to find the 'perfect language' than to specifically replace any one language.
+Swift's a more powerful language that is versatile in its use (some even say it was designed to build an Electric Apple vehicle). Swift is becoming the 'next best language,' _(similar to how Java was treated)_ built off of objective-C and similar languages, that will 'take over' the programming world and challenge it to be better and stronger. It was created more to find the 'perfect language' than to specifically replace any one language.
 
 
 
