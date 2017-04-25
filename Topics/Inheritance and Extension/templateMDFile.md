@@ -1,5 +1,5 @@
-# Hello!
-## Please use me to develop the documentation for this topic!
+# Inheritance/ Extension
+## This document will explain, compare, and give examples of how Java and Swift implement inheritance.
 
 # I'm and h1!
 ## I'm and h2!
