@@ -38,4 +38,4 @@ public void quadraticEquation(double a, double b, double c)
    option 2 (lines 14-25) is much better and wastes less time, as it is easily
       used by those who can know the name of the function and its parameters
       (what to send the function)
-*\
+*/
