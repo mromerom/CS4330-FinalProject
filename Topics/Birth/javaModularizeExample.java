@@ -11,17 +11,20 @@ else
    print("x = " + ans1 + " or " x = " + ans2 );
 
          
-quadraticEquation(a, b, c);
+boolean isReal = quadraticEquation(a, b, c);
+if(!isReal)
+   print("Imaginary number");
 
 public void quadraticEquation(double a, double b, double c)
 {
    double determinant = b*-4*a*c;
    if(d < 0)
-      print("Imaginary number");
+      return False;
    else
       double ans1 = (-b + sqrt(determinant))/(2*a);
       double ans2 = (-b + sqrt(determinant))/(2*a);
       print("x = " + ans1 + " or " x = " + ans2 );
+      return True;
 }
  
 /* 
