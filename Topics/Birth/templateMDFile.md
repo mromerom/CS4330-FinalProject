@@ -78,7 +78,7 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
          used by those who can know the name of the function and its parameters
          (what to send the function)
    *\
-'''
+```
 
 2. Execution on multiple operating systems
     > There was a large issue with 'platform independence' when coding came about. One could not simply write a program and try to run it on all platforms one is using. Java developers created a Java byte language that would be converted to the machine's 'native' language for execution and running. Furthermore, standardized libraries were developed to allow for easier implementation of threading and graphics, etc.
