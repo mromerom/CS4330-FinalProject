@@ -18,7 +18,12 @@ Objects typically model objects and things we use on a daily basis. For example,
 
 A package can be likened to a large folder system, such as 'Topics' in this repository. All the information and details pertaining to the topic 'Classes' would be within the 'Classes' folder. You wouldn't find any code examples from 'Reflection' within 'Classes,' as this would make finding the information you need much harder.
 
-
+The most important aspect of OOP are the principles:
+1.
+2.
+3.
+4.
+5.
 
 <br></br>
 ## Java
