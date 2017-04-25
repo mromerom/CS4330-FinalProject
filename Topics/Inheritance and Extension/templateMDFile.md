@@ -11,6 +11,7 @@ In programming implementation, a 'child' class is said to *extend* a 'parent' cl
 ## Java's Implementation
 ```java
 public class Vegetable{
+  String kindOfFood = 'Vegetable';
   double weight;
   // other states
   
@@ -25,7 +26,6 @@ public class Vegetable{
 }
 
 public class Cabbage extends Vegetable{
-  String kindOfFood = 'Vegetable';
   double weight;
   // other states
   
