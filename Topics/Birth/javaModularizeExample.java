@@ -1,4 +1,3 @@
-// Option 1
 double a = -16.00;
 double b = 100.00;
 double c = 6.00
@@ -11,8 +10,7 @@ else
    double ans2 = (-b + sqrt(determinant))/(2*a);
    print("x = " + ans1 + " or " x = " + ans2 );
 
-// Option 2
-//
+         
 quadraticEquation(a, b, c);
 
 public void quadraticEquation(double a, double b, double c)
