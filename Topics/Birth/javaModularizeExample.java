@@ -12,6 +12,7 @@ else
    print("x = " + ans1 + " or " x = " + ans2 );
 
 // Option 2
+//
 quadraticEquation(a, b, c);
 
 public void quadraticEquation(double a, double b, double c)
