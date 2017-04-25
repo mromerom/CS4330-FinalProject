@@ -95,8 +95,9 @@ class January_King{
   }
 }
 
-// the printWeight() in each class would override the one in the parent's class
-// the string called kindOfFood is (if not private) available to all the child classes of Vegetable for manipulation
+# the printWeight() in each class would override the one in the parent's class
+# the string called kindOfFood is (if not private) available to all the child classes of Vegetable for manipulation
+# NOTE: Swift's comments are not denoted by #, they are: // - for single lines and /*(begin) for multiple lines (end)*/
 ```
 
 <br></br>
