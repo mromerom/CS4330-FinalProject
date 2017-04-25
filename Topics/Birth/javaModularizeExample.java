@@ -1,4 +1,3 @@
-// NOTE: the change in color is due to GitHub's incomplete Java code blocking compatibility.
 // Option 1
 double a = -16.00;
 double b = 100.00;
@@ -11,7 +10,7 @@ if(d < 0){
 else{
    double ans1 = (-b + sqrt(determinant))/(2*a);
    double ans2 = (-b + sqrt(determinant))/(2*a);
-   print("x = " + ans1 + " or " x = " + ans2 );
+   print("x = " + ans1 + " or x = " + ans2 );
 }
 
 // Option 2
@@ -25,7 +24,7 @@ public void quadraticEquation(double a, double b, double c)
    else{
       double ans1 = (-b + sqrt(determinant))/(2*a);
       double ans2 = (-b + sqrt(determinant))/(2*a);
-      System.out.println("x = " + ans1 + " or " x = " + ans2 );
+      System.out.println("x = " + ans1 + " or x = " + ans2 );
    }
 }
  
