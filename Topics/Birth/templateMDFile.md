@@ -11,8 +11,11 @@
 OOP has a few basic ideas and concepts. [Every OOP language deals with](https://docs.oracle.com/javase/tutorial/java/concepts/) objects, classes, inheritance, interfaces, and packages. Classes, inheritance, and interfaces will be addressed in their respective folders in 'Topics.'
 
 > "An object is a software bundle of related state and behavior." The state of an object is a field it has, and the behaviour is the actions an object can take or perform.
+
 Objects typically model objects and things we use on a daily basis. For example, a lawn mower is object that has two behaviours: on and off, and it has multiple states or fields: four wheels, brand name, motor, bag, etc.
+
 > "A package is a namespace for organizing classes and interfaces in a logical manner." 
+
 A package can be likened to a large folder system, such as 'Topics' in this repository. All the information and details pertaining to the topic 'Classes' would be within the 'Classes' folder. You wouldn't find any code examples from 'Reflection' within 'Classes,' as this would make finding the information you need much harder.
 
 
