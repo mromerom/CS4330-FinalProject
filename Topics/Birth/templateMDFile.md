@@ -18,13 +18,15 @@ Objects typically model objects and things we use on a daily basis. For example,
 
 A package can be likened to a large folder system, such as 'Topics' in this repository. All the information and details pertaining to the topic 'Classes' would be within the 'Classes' folder. You wouldn't find any code examples from 'Reflection' within 'Classes,' as this would make finding the information you need much harder.
 
-The most important aspect of OOP are the principles _(the first four are the main principles; the rest are important but 'secondary')_:
+The most important aspect of OOP are the principles:
 1. Abstraction
-2. Encapsulation
+   > Abstraction helps programmers focus on important details and ignore any states or behaviours that are not neccessary to software. For example, you work at a university and have Staff objects. Staff members have roles, salaries, a permanent address, a phone number, etc. In order for this 'object' to be useful, the university needs to be able to store their contact information and what they do, so they can refer to it for use in directories, payroll, etc. At no point will you or the university need to know their shoe size, how many children they have, etc. These aspects are _unneccessary_ for the university's Staff object and keeping out those extraneous attributes would be keeping in line with OOP abstraction.
+2. Encapsulation (or data hiding)
+   > "[Through encapsulation](https://www.tutorialspoint.com/object_oriented_analysis_design/ooad_object_oriented_principles.htm), the internal details of a class can be hidden from outside." This concept makes sure the states and behaviours of an object are tied together and prevents it (_should prevent it_) from being directly manipulated by other objects. This enhances security of data.
 3. Polymorphism
+   >
 4. Inheritance
-    *This will be addressed in 'Inheritance and Extension.'*
-5. Composition
+   > *This will be addressed in 'Inheritance and Extension.'*
 
 <br></br>
 ## Java
