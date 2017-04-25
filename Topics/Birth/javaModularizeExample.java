@@ -14,7 +14,7 @@ else{
    print("x = " + ans1 + " or " x = " + ans2 );
 }
 
-
+// Option 2
 quadraticEquation(a, b, c);
 
 public void quadraticEquation(double a, double b, double c)
@@ -22,10 +22,11 @@ public void quadraticEquation(double a, double b, double c)
    double determinant = b*-4*a*c;
    if(d < 0)
       System.out.println("Answer is imaginary.");
-   else
+   else{
       double ans1 = (-b + sqrt(determinant))/(2*a);
       double ans2 = (-b + sqrt(determinant))/(2*a);
       System.out.println("x = " + ans1 + " or " x = " + ans2 );
+   }
 }
  
 /* 
