@@ -98,13 +98,9 @@ Java was developed more to combine aspects of a new and radical programming idea
 [Apple states](https://www.apple.com/swift/):
 > "Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch. It’s designed to give developers more freedom than ever. Swift is easy to use and open source, so anyone with an idea can create something incredible."
 
-Why section
-    why did apple devs want to
-        what did they think it helped fix
-    motivation
+Programming languages used to be difficult to learn. Languages are, along with becoming much more powerful, becoming easier to use and to learn. To make something, that's difficult to understand, more fun to learn but also powerful, versatile and would "revolutionize."
 
-Reaction/ replacement section
-    what they want to replace
-        also what they thought it would help fix
+Swift's simple programming style allows for a reduced learning curves of programming principles. It's slowly trying to develop a world with OOP. It's a more powerful language that is versatile in its use (some even say it was designed to build an Electric Apple vehicle). Swift is becoming the 'next best language,' _(similar to how Java was treated)_ built off of objective-C and similar languages, that will 'take over' the programming world and challenge it to be better and stronger. It was created more to find the 'perfect language' than to specifically replace any one language.
+
 
 
