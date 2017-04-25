@@ -51,7 +51,7 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
    else
       double ans1 = (-b + sqrt(determinant))/(2*a);
       double ans2 = (-b + sqrt(determinant))/(2*a);
-      print("x = " + ans1 + " or " x = " + ans2 );
+      print("x = " + ans1 + " or x = " + ans2 );
 
    // the above code is fine when you're not using the quadratic equation multiple times
    /* but imagine many different people needing to use this; wouldn't it be easier to
@@ -68,10 +68,11 @@ There were [five main goals](http://www.freejavaguide.com/history.html) Java was
       double determinant = b*-4*a*c;
       if(d < 0)
          print("Imaginary number");
-      else
+      else{
          double ans1 = (-b + sqrt(determinant))/(2*a);
          double ans2 = (-b + sqrt(determinant))/(2*a);
-         print("x = " + ans1 + " or " x = " + ans2 );
+         print("x = " + ans1 + " or x = " + ans2 );
+      }
    }
 
    /* this version is much better and less wasting of time, as it is easily
