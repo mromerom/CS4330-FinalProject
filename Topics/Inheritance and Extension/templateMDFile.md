@@ -105,9 +105,10 @@ class January_King: Cabbage{
 
 Java and Swift's implementation of extension is very similar. 
 Swift denotes class types (parent class) with a colon and Java with the keyword "extends."
-In regards to overriding parent behaviours, there are special keywords that are used to implement this. However, they are *not* required. Java uses annotations for override: @override, which precedes the declaration of a behavior (states are easily manipulated if they are not private in the parent class), and Swift uses simply 'override' on the same line as the declaration of the behaviour (Swift can also use this notation for variables as noted in: 
->```python class 
-    January_King_Override: Cabbage```).
+In regards to overriding parent behaviours, there are special keywords that are used to implement this. However, they are *not* required. Java uses annotations for override: @override, which precedes the declaration of a behavior (states are easily manipulated if they are not private in the parent class), and Swift uses simply 'override' on the same line as the declaration of the behaviour; Swift can also use this notation for states as sampled in: 
+```python 
+  class January_King_Override: Cabbage
+```
 
 
 
