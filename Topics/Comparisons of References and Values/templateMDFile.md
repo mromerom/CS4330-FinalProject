@@ -300,6 +300,7 @@ print("j == k: " + String(j == k))
 # hint: === tests for same reference or 'identity'
 
 # NOTE: this is written with python markdown as swift is not yet supported. Swift comments (// and /**/) are the same as Java's.
+#           this is also why -> and && are highlighted in a red block, as they are not used in python.
 ```
 
 
