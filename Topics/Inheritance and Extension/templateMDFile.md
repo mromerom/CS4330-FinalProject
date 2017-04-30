@@ -329,7 +329,10 @@ veggie = jking;
 veggie.printWeight(); // Q4: output?
 veggie.printKind(); // Q5: output?
 ```
-> Answers: 3. jking.printKind() would be the same as cabbage.printKind(), because it didn't override the function or modify what 'kindOfFood' was \n4. since parents can be assigned to their child class objects, veggie.printWeight() = 3.4 \n5. according to #4, this means that veggie.printKind() = Cabbage Class kindOfFood: Cabbage
+> Answers: 
+> Q3: jking.printKind() would be the same as cabbage.printKind(), because it didn't override the function or modify what 'kindOfFood' was 
+> Q4: since parents can be assigned to their child class objects, veggie.printWeight() = 3.4
+> Q5: according to #4, this means that veggie.printKind() = Cabbage Class kindOfFood: Cabbage
 
 
 
