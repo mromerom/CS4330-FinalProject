@@ -7,14 +7,11 @@ Comparing two variables and checking if they are 'the same' ca be pretty tricky.
 
 <br></br>
 ## Java's Implementation
+*The classes may be ignored. Only one function is 'important' but please start with main, as this will go in-depth with java's comparisons.*
 ```java
 public class Vegetable {
     private final String kindOfFood = "Vegetable";
-    // private states are not transferred to child classes
-    //    aka. child classes don't have them, and if they created one,
-    //          it would be completely separate from the parent's version
     double weight;
-    // weight is not private, and therefore MUST be used by the child classes
     // other states
 
     public Vegetable(double weight){
@@ -27,49 +24,30 @@ public class Vegetable {
     
     public void printKind(){
         System.out.println("Vegetable Class kindOfFood: " + kindOfFood);
-        // child class cannot access parent's private states
-        //  however, a public parent method CAN access them,
-        //  and if the child class were to call this function (and not override it),
-        //  they could print out kindOfFood --> even though they DON'T have it
     } 
     // other behaviours
 
 public class Cabbage extends Vegetable{
     String kindOfFood = "Cabbage";
-    // since Cabbage class doesn't have access to private variables
-    //  it would NOT be overriding the parent classes 'kindOfFood'
-    // also, weight is not a state that needs to be
     boolean fresh;
-    // this state will NOT be withing the parent class, meaning
-    //      the parent class has no state called fresh
     // other states
 
     public Cabbage(double weight, boolean fresh){
         super(weight);
-        // child classes must use their parent class's constructor;
-        //    child classes build off parent classes, so they would
-        //    be 'missing' a piece if they didn't call the parent's
-        //    constructor
-        // calling the parent's constructor is creating the 'main' piece(s)
-        //      of this object; main being the parent portions
         this.fresh = fresh;
     }
     
-    // adding a printWeight() is unneccessary, as th parent class
-    //      is already implementing it
-    
-    /*@Override
+    @Override
     public void printKind(){
         System.out.println("Cabbage Class kindOfFood: " + kindOfFood);
-        // Q1: if this function weren't here, what would an object ot
-        //      class Cabbage print instead?
-    }*/
+    }
     
     public void printFresh(){
         System.out.println("Cabbage Class fresh: " + fresh);
     }
     
     
+    // NEW FUNCTION FOR THIS TOPIC'S DISCUSSION
     public boolean equals(Cabbage other){
         if(!(other instanceof Cabbage))
             return false;
@@ -80,6 +58,7 @@ public class Cabbage extends Vegetable{
     //      every attribute
     
     // other behaviours
+}
 
 public static void main(String[] args) {
         Cabbage cabbage1 = new Cabbage(3.3, true);
