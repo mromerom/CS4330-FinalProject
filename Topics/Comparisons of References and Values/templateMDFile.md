@@ -281,6 +281,19 @@ print("cabbage3 == cabbage4: " + String(cabbage3 == cabbage4))
 print("cabbage2 == cabbage5: " + String(cabbage2 == cabbage5))
 # Q7: what will cabbage2 == cabbage5 output?
 
+# bonus round
+# Q8: what will the following lines output
+print("'Primitive' and String comparisons with ===:")
+print("i = " + String(i) + ", j = " + String(j) + ", k = " + String(k))
+print("i === j: " + String(i === j))
+print("i === k: " + String(i === k))
+print("j === k: " + String(j === k))
+print("i = " + String(i) + ", j = " + String(j) + ", k = " + String(k))
+print("i == j: " + String(i == j))
+print("i == k: " + String(i == k))
+print("j == k: " + String(j == k))
+# hint: === tests for same reference or 'identity'
+
 # NOTE: this is written with python markdown as swift is not yet supported. Swift comments (// and /**/) are the same as Java's.
 ```
 
@@ -292,7 +305,8 @@ print("cabbage2 == cabbage5: " + String(cabbage2 == cabbage5))
 
 <br></br>
 ## Practice Your Knowledge!
-Q1
-Q2
-Q3
-Q4
+Q1 (Q5 swift)
+Q2 (Q6 swift)
+Q3 (not in the Swift code examples)
+Q4 (Q7 swift)
+Q8 (not in the Java code examples)
