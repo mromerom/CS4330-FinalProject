@@ -1,12 +1,20 @@
-# Hello!
-## Please use me to develop the documentation for this topic!
+# Inheritance/ Extension
+#### *This document will explain how values are compared, ie. comparing two strings.*
 
-# I'm and h1!
-## I'm and h2!
-### I'm and h3!
+<br></br>
+## References and Values
+Comparing two variables can be very tricky. For primitive types (int, double, char), a simple == is used. These primitive types only contain the values associated with the variable. However, many comparisons are made on objects (String, Double, CustomObj). These contain much more information about the variable than just its value. For example, in the topic Inheritance and Extension, Cabbage's have a weight and freshness, say you wanted to compare them. On what value would you do that, weight or freshness? What if you just wanted to see if one object was the same kind of object as another? 
 
-* I'm and unordered list
-	* I'm a sub unordered list!
+Each language has its own way of dealing with these kinds of comparisons.
 
-1. I'am an ordered list.
-	1. I'm a sub ordered list!
+<br></br>
+## Java's Implementation
+
+
+<br></br>
+## Swift's Implementation
+
+
+
+<br></br>
+## Comparing
