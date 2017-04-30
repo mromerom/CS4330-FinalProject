@@ -90,7 +90,7 @@ public class January_King extends Cabbage{
     public void printKind(){
         System.out.println("January King Class kindOfFood: "+ kindOfFood);
     }*/
-    // Which kindOfFood do you think this would print if it were active (uncommented)?
+    // Q2: Which kindOfFood do you think this would print if it were active (uncommented)?
     
     
     public void printRegion(){
@@ -111,7 +111,7 @@ public static void main(String[] args) {
         System.out.println("\nveggie, cabbage, jking:");
         veggie.printKind(); // output: Vegetable Class kindOfFood: Vegetable
         cabbage.printKind(); // output: Cabbage Class kindOfFood: Cabbage
-        jking.printKind(); // Q2: output: ?
+        jking.printKind(); // Q3: output: ?
 
         System.out.println("\ncabbage, jking:");
         cabbage.printFresh(); // output: true
@@ -123,8 +123,8 @@ public static void main(String[] args) {
         
         System.out.println("\nveggie = jking:");
         veggie = jking;
-        veggie.printWeight(); // Q3: output?
-        veggie.printKind(); // Q4: output?
+        veggie.printWeight(); // Q4: output?
+        veggie.printKind(); // Q5: output?
         //veggie.printFresh();
         //  parent classes can be assigned to their child classes, because
         //      the child classes will have every state/behaviour of the parent;
@@ -196,7 +196,7 @@ In regards to overriding parent behaviours, there are special keywords that are 
   class January_King_Override: Cabbage{...}
 ```
 
-To practice this new knowledge, can you solve the answers to Q1-4 in the Java sample code and Q5-? in the Swift example code?
+To practice this new knowledge, can you solve the answers to Q1-5 in the Java sample code and Q6-? in the Swift example code?
 Try running the Java and Swift programs!
 
 
