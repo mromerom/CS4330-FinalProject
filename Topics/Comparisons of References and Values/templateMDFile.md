@@ -48,11 +48,13 @@ public class Cabbage extends Vegetable{
     
     
     // NEW FUNCTION FOR THIS TOPIC'S DISCUSSION
-    public boolean equals(Cabbage other){
+    public boolean equals(Object other){
         if(!(other instanceof Cabbage))
             return false;
-        
-        return this.weight == other.weight && this.fresh == other.fresh;
+        else{
+            Cabbage otherObj = (Cabbage) other;
+            return this.weight == otherObj.weight && this.fresh == otherObj.fresh;
+        }
     }
     // we need to override the .equals() function in order to compare
     //      every attribute
