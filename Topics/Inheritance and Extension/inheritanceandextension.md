@@ -29,7 +29,7 @@ public class Vegetable {
     
     public void printKind(){
         System.out.println("Vegetable Class kindOfFood: " + kindOfFood);
-        // child class cannot access parent's private states
+        // child class cannot access parent's private states 
         //  however, a public parent method CAN access them,
         //  and if the child class were to call this function (and not override it),
         //  they could print out kindOfFood --> even though they DON'T have it
