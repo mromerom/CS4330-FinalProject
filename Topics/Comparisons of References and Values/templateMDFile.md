@@ -124,7 +124,9 @@ public static void main(String[] args) {
         System.out.println("cabbage3 == cabbage 4: " + (cabbage3 == cabbage4));
         // why are none of these correct??
         // with objects, == checks to see if the variables are pointing to
-        //      the same object
+        //      the same object (explicitly the same: the variables point to 
+        //      the same address of the object)
+        
         System.out.println("\nComparing objects with == (fixed): ");
         System.out.println("Cabbage cabbage5 = cabbage2;");
         Cabbage cabbage5 = cabbage2;
@@ -149,9 +151,20 @@ public static void main(String[] args) {
         // this is a special function developed for String objects
         // all objects have this function, actually, but it doesn't
         //      always work as expected 
-        //          --> .equals() is only true when: cabbage2.equals(cabbage5)
-        //      fortunately we can use our knowledge of overriding
+        // for Strings, we know we're specifically looking at each character
+        //      and the character's order in the string and seeing if str1
+        //      has the same string as str3, which it does
+        // for custom objects, there needs to be specificity
+        //      ex. what makes two objects the same?
+        //      typically, this means seeing if the objects are the same instance,
+        //          if this is true, then one would have to compare all the variables
+        //          ex. Cabbages have weight and fresh (kindOfFood can be ignored)
+        
+        // fortunately we can use our knowledge of overriding
         //      to make this function do what we want it too
+        //      (see the overriden function in Cabbage class)
+        // Q3: a. what will these lines output if the function isn't overriden?
+        //     b. will any print true? why?
         System.out.println("\nComparing Objects with overidden .equals(): ");
         System.out.println("cabbage1.equals(cabbage3): " + (cabbage1.equals(cabbage3)));
         System.out.println("cabbage1.equals(cabbage2): " + (cabbage1.equals(cabbage2)));
@@ -160,11 +173,11 @@ public static void main(String[] args) {
         System.out.println("cabbage2.equals(cabbage4): " + (cabbage2.equals(cabbage4)));
         System.out.println("cabbage3.equals(cabbage4): " + (cabbage3.equals(cabbage4)));
         System.out.println("cabbage2.equals(cabbage5): " + (cabbage2.equals(cabbage5)));
-        // Q3: what will cabbage2.equals(cabbage5) output?
-        // now this can be a hassle trying to compare every aspect of an object
-        //      it can be very useful for finding duplicate information
+        // Q4: what will cabbage2.equals(cabbage5) output if equals() IS overriden?
+        // now this can be a small hassle trying to compare every variable of an object,
+        //      but it can be very useful for finding duplicate information
         // however, most programming suggests to have a 'primary key' that
-        //      makes objects unqiue; then, one would compare those keys   
+        //      makes objects unqiue; then, one would compare those keys
     }
 ```
 
@@ -180,3 +193,7 @@ public static void main(String[] args) {
 
 <br></br>
 ## Practice Your Knowledge!
+Q1
+Q2
+Q3
+Q4
