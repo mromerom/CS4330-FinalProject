@@ -293,14 +293,43 @@ public void printKind(){
 To practice this new knowledge, can you solve the answers to Q1-5 in the Java sample code (and Q6-10 in the Swift example code)?
 Try running the Java and Swift programs! (Hint: Q2 has already been slightly solved in the above section about when to override!)
 
-Q1:
+#### Q1
 ```java
-    @Override
-    public void printKind(){
-        System.out.println("Cabbage Class kindOfFood: " + kindOfFood);
-        // Q1: if this function weren't here, what would an object ot
-        //      class Cabbage print instead?
-    }
+@Override
+public void printKind(){
+    System.out.println("Cabbage Class kindOfFood: " + kindOfFood);
+    // Q1: if this function weren't here, what would an object ot
+    //      class Cabbage print instead?
+}
 ```
-> Answer: If Cabbage did not override the function, cabbage.printKind() will print the same as veggie.printKind(), because the parent clas doesn't know that the child class has its own variable 'kindOfFood,' as its not a share variable and will not override vegtable class's 'kindOfFood.'
+> Answer: If Cabbage did not override the function, cabbage.printKind() will print the same as veggie.printKind(), because the parent class doesn't know that the child class has its own variable 'kindOfFood,' as its not a share variable and will not override vegtable class's 'kindOfFood.'
+
+#### Q2
+```java
+/*@Override
+public void printKind(){
+    System.out.println("January King Class kindOfFood: "+ kindOfFood);
+}*/
+// Q2: Which kindOfFood do you think this would print if it were active (uncommented)?
+```
+> Answer: January_King's printKind() would print Cabbage as its 'kindOfFood,' as it's declared in the Cabbage class and not modified in January_King. 
+
+
+#### Q3-5
+```java
+veggie.printWeight(); // output: 3.2
+cabbage.printWeight(); // output: 3.3
+jking.printWeight(); // output: 3.4
+// ...
+veggie.printKind(); // output: Vegetable Class kindOfFood: Vegetable
+cabbage.printKind(); // output: Cabbage Class kindOfFood: Cabbage
+jking.printKind(); // Q3: output: ?
+// ...
+veggie = jking;
+veggie.printWeight(); // Q4: output?
+veggie.printKind(); // Q5: output?
+```
+> Answers: 3. jking.printKind() would be the same as cabbage.printKind(), because it didn't override the function or modify what 'kindOfFood' was \n4. since parents can be assigned to their child class objects, veggie.printWeight() = 3.4 \n5. according to #4, this means that veggie.printKind() = Cabbage Class kindOfFood: Cabbage
+
+
 
