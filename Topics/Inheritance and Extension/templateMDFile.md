@@ -148,56 +148,159 @@ public static void main(String[] args) {
 #### *Swift is written here using Python markdown, as Swift markdown is not yet supported*
 ```python
 class Vegetable{
-  var kindOfFood = "Vegetable"
-  var weight
+  private var kindOfFood: String = "Vegetable";
+  var weight: Double = 0;
   
-  init(weight: double){
+  init(weight: Double){
+    self.weight = weight;
+    # java uses 'this' and swift uses 'self'
+    #  this will be covered in a later topic,
+    #  under self-referencing
   }
   
   func printWeight(){
-    print(weight);
+        print(weight);
   } 
+  
+  func printKind(){
+      print("Vegtable Class kindOfFood: " + kindOfFood)
+      # see the comment under this same class's function in Java
+  }
+  
 }
-
 class Cabbage: Vegetable{
-  var weight
+    var kindOfFood: String = "Cabbage";
+    # since Vegetable's kindOfFood variable was private,
+    #      Cabbage doesn't 'have' one
+    var fresh: Bool = true;
   
-  init(weight: double){
-  }
+    init(weight: Double, fresh: Bool){
+        super.init(weight: weight)
+        self.fresh = fresh;
+    }
   
-  func printWeight(){
-    print(weight);
-  }
+    # no need to add printWeight() as the parent class 
+    #    provides it
+  
+    override func printKind(){
+        print("Cabbage Class kindOfFood: " + kindOfFood)
+        # Q6: if this function weren't here, what would an object of
+        #      class Cabbage print instead?
+    }
+    
+    func printFresh(){
+        print("Cabbage Class fresh: " + String(fresh));
+    }
+  
 }
-
 class January_King: Cabbage{
-  var weight
+    var region: String = "southwest";
   
-  init(weight: double){
-  }
+    init(weight: Double, fresh: Bool, region: String){
+        super.init(weight: weight, fresh: fresh)
+        self.region = region;
+    }
   
-  func printWeight(){
-    print(weight);
-  }
+    # no need to add printWeight() as the parent class 
+    #    provides it
+  
+    '''
+    override func printKind(){
+        print("January_King Class kindOfFood: " + kindOfFood)
+    }
+    Q7: Which kindOfFood do you think this would print if it were active (uncommented)?
+    '''
+    
+    # no need to add printFresh() as the parent class 
+    #      provides it
+    
+    func printRegion(){
+        print("January_King class region: " + region)
+    }
+  
 }
 
-# the printWeight() in each class would override the one in the parent's class
-# the string called kindOfFood is (if not private) available to all the child classes of Vegetable for manipulation
+var veggie = Vegetable(weight: 3.2);
+var cabbage = Cabbage(weight: 3.3, fresh: true);
+var jking = January_King(weight: 3.4, fresh: false, region: "northwest");
+
+
+print("veggie, cabbage, jking");
+veggie.printWeight();
+cabbage.printWeight();
+jking.printWeight();
+
+print("\nveggie, cabbage, jking");
+veggie.printKind(); # output = Vegetable Class kindOfFood: Vegetable
+cabbage.printKind(); # output = Cabbage Class kindOfFood: Cabbage
+jking.printKind(); # Q8: output = ?
+
+print("\ncabbage, jking");
+cabbage.printFresh(); # output = true
+jking.printFresh(); # output = false
+
+print("\njking");
+jking.printRegion(); # output = northwest
+
+print("\nveggie = jking");
+veggie = jking;
+veggie.printWeight(); # Q9: output = ?
+veggie.printKind(); # Q10: output = ?
+
+
 # NOTE: Swift's comments are not denoted by #, they are: // - for single lines and /*(begin) for multiple lines (end)*/
 ```
 
 <br></br>
 ## Java vs. Swift
 
-Java and Swift's implementation of extension is very similar. 
-Swift denotes class types (parent class) with a colon and Java with the keyword "extends."
-In regards to overriding parent behaviours, there are special keywords that are used to implement this.. Java uses annotations for override: @Override, which precedes the declaration of a behavior (states are easily manipulated, if they are not private in the parent class), and Swift uses simply 'override' on the same line as the declaration of the behaviour; Swift can also use this notation for states as sampled in: 
-```python 
-  class January_King_Override: Cabbage{...}
+The properties of inheritance and extension do not change from language to language. However, the actual coding implementation does. 
+To denote that a class is a child of another, Java uses 'extends':
+```java
+public class Cabbage extends Vegetable(){}
+```
+Swift uses a colon:
+```python
+class Cabbage: Vegetable(){}
 ```
 
-To practice this new knowledge, can you solve the answers to Q1-5 in the Java sample code and Q6-? in the Swift example code?
-Try running the Java and Swift programs!
+In regards to overriding parent behaviours, there are special keywords that are used to implement this. 
+Java uses annotations for override: @Override, which precedes (on the same line or above) the declaration of the behaviour:
+```java
+@Override
+public void printKind(){
+    System.out.println("Cabbage Class kindOfFood: " + kindOfFood);
+}
+```
+Swift uses simply 'override' on the same line as the declaration of the behaviour: 
+```python
+override func printKind(){
+    print("Cabbage Class kindOfFood: " + kindOfFood)
+}
+```
+Overriding functions is not necessary! Sometimes there's not reason to override a function, such as printWeight(). However, it would make sense to override any of the functions that are specific to the class it's printing in. For example, everyone knows a cabbage is a vegetable, but what is a January King vegetable? It would make sense, in this case, to override printKind() in January_King as such:
+```java
+@Override
+public void printKind(){
+    System.out.println("January_King Class kindOfFood: " + kindOfFood);
+    // this will still print the parent class's kindOfFood, but now,
+    //      the person who calls this will know that a January_King is
+    //      a kind of cabbage
+}
+```
+<br></br>
+### Practice Your Knowledge!
+To practice this new knowledge, can you solve the answers to Q1-5 in the Java sample code (and Q6-10 in the Swift example code)?
+Try running the Java and Swift programs! (Hint: Q2 has already been slightly solved in the above section about when to override!)
 
-
+Q1:
+```java
+    @Override
+    public void printKind(){
+        System.out.println("Cabbage Class kindOfFood: " + kindOfFood);
+        // Q1: if this function weren't here, what would an object ot
+        //      class Cabbage print instead?
+    }
+```
+> Answer: If Cabbage did not override the function, cabbage.printKind() will print the same as veggie.printKind(), because the parent clas doesn't know that the child class has its own variable 'kindOfFood,' as its not a share variable and will not override vegtable class's 'kindOfFood.'
 
