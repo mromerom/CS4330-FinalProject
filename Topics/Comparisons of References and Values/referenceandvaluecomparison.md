@@ -1,4 +1,4 @@
-# Inheritance/ Extension
+# Comparisons of References and Values
 #### *This document will explain how values are compared, ie. comparing two strings.*
 
 <br></br>
