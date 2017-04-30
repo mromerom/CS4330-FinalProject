@@ -302,7 +302,9 @@ public void printKind(){
     //      class Cabbage print instead?
 }
 ```
-> Answer: If Cabbage did not override the function, cabbage.printKind() will print the same as veggie.printKind(), because the parent class doesn't know that the child class has its own variable 'kindOfFood,' as its not a share variable and will not override vegtable class's 'kindOfFood.'
+Answer:
+
+> If Cabbage did not override the function, cabbage.printKind() will print the same as veggie.printKind(), because the parent class doesn't know that the child class has its own variable 'kindOfFood,' as its not a share variable and will not override vegtable class's 'kindOfFood.'
 
 #### Q2
 ```java
@@ -312,7 +314,9 @@ public void printKind(){
 }*/
 // Q2: Which kindOfFood do you think this would print if it were active (uncommented)?
 ```
-> Answer: January_King's printKind() would print Cabbage as its 'kindOfFood,' as it's declared in the Cabbage class and not modified in January_King. 
+Answer:
+
+> January_King's printKind() would print Cabbage as its 'kindOfFood,' as it's declared in the Cabbage class and not modified in January_King. 
 
 
 #### Q3-5
