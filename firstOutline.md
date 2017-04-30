@@ -28,7 +28,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Instance Reference Name
 * This topic will go over keywords such as this, self, and super.
-* written by:
+* written by: **Payton Hosna**
 * reviewed by:
 ### Properties
 * This topic will go over the properties that classes may or may not have.
@@ -40,7 +40,8 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Inheritance and Extension
 * This topic will go over inheritance and extensions of classes.
-* written by: **Payton Hosna**
+* written by: 
+* started by: **Payton Hosna**
 * reviewed by:
 ### Reflection
 * This topic will go over reflection and its support by the languages.
