@@ -5,6 +5,9 @@
 ## References and Values
 Comparing two variables and checking if they are 'the same' ca be pretty tricky. For primitive types (int, double, char), a simple == is used. These primitive types only contain the values associated with the variable. However, many comparisons are made on objects (String, Double, CustomObj). These contain much more information about the variable than just its value. For example, in the topic Inheritance and Extension, Cabbage's have a weight and freshness, say you wanted had a few cabbage objects and wanted to see if any are the same. How could you do that? 
 
+Note 1: when talking about 'comparing references' and an object is said to have the 'same reference' as another, this means seeing if two objects point to the same address of 'one' object or the two objects have the same 'identity.' Similar to a duplicate, but the difference is that if you change one, the other is also changed. Life example: duplicates would be identical twins and 'same references' would be two souls trapped in one body.
+Note 2: a custom object is a class a programmer makes, ex. Cabbage, Vegetable, etc. A non-custom object is a built-in object, ex. Java: Double, String, etc. Any instance of the word 'object' that is not preceeded by 'custom' is a non-custom/ built-in object.
+
 <br></br>
 ## Java's Implementation
 *The classes may be ignored. Only one function is 'important' but please start with main, as this will go in-depth with java's comparisons.*
@@ -117,6 +120,7 @@ public static void main(String[] args) {
         cabbage5.weight = 5;
         System.out.println("cabbage5.weight = " + cabbage5.weight);
         System.out.println("cabbage2.weight = " + cabbage2.weight);
+        System.out.println("cabbage2.weight == cabbage5.weight: " + (cabbage2.weight == cabbage5.weight));
         // Q2: based on your conclusion from Q1, what will these two statements output?
         
         // now let's backtrack
@@ -263,8 +267,9 @@ print("cabbage2 === cabbage5: " + String(cabbage2 === cabbage5))
 cabbage5.weight = 5
 print("cabbage5.weight = " + String(cabbage5.weight))
 print("cabbage2.weight = " + String(cabbage2.weight))
+print("cabbage2.weight == cabbage5.weight: " + String(cabbage2.weight == cabbage5.weight))
 # Q6: based on your conclusion from Q5, what will 
-#      these two lines output 
+#      these lines output 
 
 # now, java was able to override the equals() method,
 #      which means the equivalent *should* be available
@@ -300,13 +305,93 @@ print("j == k: " + String(j == k))
 
 <br></br>
 ## Comparing
+Java and Swift are definitely near opposite ends on comparing references vs. values. Comparing 'primitive' types in Java and Swift will still be the same with the ==; however, Swift has a different interpretation of 'primitive' as noted by:
+```python
+print("\nString Comparisons with ==: ")
+print("str1 = " + str1 + ", str2 = " + str2 + ", str3 = " + str3)
+print("str1 == str3: " + String(str1 == str3))
+print("str1 == str2: " + String(str1 == str2))
+print("str2 == str3: " + String(str2 == str3))
+# now this is definitely different from java
+#  == in swift will compare 'what's expected'
+#  we know what to expect when we compare words
+#      numbers, booleans, etc. we DON'T know how
+#      to compare 'custom' objects
+```
+When Java wants to compare (non-custom) objects, it must use the equals() function:
+```java
+System.out.println("\nComparing Strings with str1.equals(str2): ");
+System.out.println("str1 = " + str1 + ", str2 = " + str2 + ", str3 = " + str3);
+System.out.println("str1.equals(str3): " + (str1.equals(str3)));
+System.out.println("str1.equals(str2): " + (str1.equals(str2)));
+System.out.println("str2.equals(str3): " + (str2.equals(str3)));
+```
+What about custom objects? Custom objects' variables can be compared on their own:
+*Java, line 3*
+```java
+System.out.println("cabbage5.weight = " + cabbage5.weight);
+System.out.println("cabbage2.weight = " + cabbage2.weight);
+System.out.println("cabbage2.weight == cabbage5.weight: " + (cabbage2.weight == cabbage5.weight));
+```
+*Swift, line 3*
+```python
+print("cabbage5.weight = " + String(cabbage5.weight))
+print("cabbage2.weight = " + String(cabbage2.weight))
+print("cabbage2.weight == cabbage5.weight: " + String(cabbage2.weight == cabbage5.weight))
+```
+But to compare the whole object, one would need to override equals() in Java and == (or ===) in Swift:
+*Java*
+```java
+public boolean equals(Object other){
+    if(!(other instanceof Cabbage))
+        return false;
+    else{      
+        Cabbage otherObj = (Cabbage) other;
+        return this.weight == otherObj.weight && this.fresh == otherObj.fresh;
+    }
+}
+```
+*Swift*
+```python
+static func == (lhs: Cabbage, rhs: Cabbage) -> Bool{
+    return lhs.weight == rhs.weight && lhs.fresh == rhs.fresh
+}
+```
+Note that Swift requires you to declare the new == as static. Every object of Cabbage has the **same** == function; if they didn't, we'd have to figure out a new way to compare them.
 
+Important takeaway: when creating new classes/ objects, know what kind of comparisons can be made with them and understand how to create a custom compare (overriden function) if needed.
 
 
 <br></br>
-## Practice Your Knowledge!
-Q1 (Q5 swift)
-Q2 (Q6 swift)
-Q3 (not in the Swift code examples)
-Q4 (Q7 swift)
-Q8 (not in the Java code examples)
+### Practice Your Knowledge!
+#### Q1 (Q5 swift)
+```java
+```
+Answer:
+#### Q2 (Q6 swift)
+```java
+```
+Answer:
+#### Q3 (not in the Swift code examples)
+```java
+```
+Answer:
+#### Q4 (Q7 swift)
+```java
+```
+Answer:
+#### Q8 (not in the Java code examples)
+```python
+```
+Answer:
+
+
+
+
+
+
+
+
+
+
+
