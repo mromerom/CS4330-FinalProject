@@ -9,6 +9,7 @@ Instance reference names are keywords that refer to an object's reference variab
 <br></br>
 ## Java's Implementation
 ```java
+// this interface is BONUS material
 public interface InterfaceSuperExample {
     
     default public void printFreshness(boolean fresh){
@@ -73,7 +74,7 @@ public class Cabbage extends Vegetable implements InterfaceSuperExample{
     }
 
     
-    public void printFresh(){
+    public void printFresh(){ // part of BONUS material
         System.out.println("Cabbage Class fresh: " + fresh);
         InterfaceSuperExample.super.printFreshness(fresh);
     }
@@ -99,6 +100,7 @@ public class Cabbage extends Vegetable implements InterfaceSuperExample{
     //      aka. the current object that is in action 
     // super can only be used if the object's class extends
     //      another class
+    // part of BONUS material:
     //      note: with interfaces, super can be used as such:
     //              <interface>.super.<interfacemethod>(<parameters>);
     //                  for method calls to default methods
@@ -108,7 +110,7 @@ public class Cabbage extends Vegetable implements InterfaceSuperExample{
         Cabbage cabbage = new Cabbage(3.3, true);
         
         System.out.println("Freshness and weight from pounds to kg: ");
-        cabbage.printFresh();
+        cabbage.printFresh(); // part of BONUS material
         cabbage.printWeightKg();
     }
 }
@@ -117,7 +119,60 @@ public class Cabbage extends Vegetable implements InterfaceSuperExample{
 <br></br>
 ## Swift's Implementation
 ```python
+class Vegetable{
+  private var kindOfFood: String = "Vegetable"
+  var weight: Double = 0
+  
+  init(weight: Double){
+    self.weight = weight
+  }
+  
+  func printWeight(){
+        print(weight)
+  } 
+  
+  func printKind(){
+      print("Vegtable Class kindOfFood: " + kindOfFood)
+  }
+  
+  func calculateWeighttoKg() -> Double{
+      return weight * (1.0/2.205)
+  }
+  
+}
+class Cabbage: Vegetable{
+    var kindOfFood: String = "Cabbage"
+    var fresh: Bool = true
+  
+    init(weight: Double, fresh: Bool){
+        super.init(weight: weight)
+        # in Swift, when using the super keyword,
+        #      the func being called must be 
+        #      specified
+        self.fresh = fresh
+        # instead of this, Swift uses self,
+        #      which is more intuitive
+    }
+  
+    override func printKind(){
+        print("Cabbage Class kindOfFood: " + kindOfFood)
+    }
+    
+    func printFresh(){
+        print("Cabbage Class fresh: " + String(fresh))
+    }
+  
+    func printWeightKg(){
+        print("Cabbage Class: call to parent class: ")
+        print("\tWeight in lbs: " + String(super.weight))
+        print("\tWeight in kgs: " + String(super.calculateWeighttoKg()))
+    }
+    
+}
+var cabbage = Cabbage(weight: 3.3, fresh: true);
 
+print("Cabbage weight from lbs to kgs: ")
+cabbage.printWeightKg()
 ```
 
 
@@ -132,19 +187,12 @@ System.out.println("\tWeight in kgs: " + super.calculateWeighttoKg());
 ```. 
 While Swift requires super to specify which function to call, including the constructor: 
 ```python
-// call parent constructor(s)
-super.init()
+# call to Cabbage's parent's, Vegetable, constructor
+super.init(weight: weight)
+# call to Cabbage's parent's, Vegetable, method: calculateWeighttoKg()
+print("\tWeight in kgs: " + String(super.calculateWeighttoKg()))
 ```
 Swift uses self instead of this, which makes understanding the use of this/ self more apparent. Personally, I believe 'self' is much more intuitive than 'this,' as it is more clear on what object it is referencing.
-
-
-<br></br>
-### Practice Your Knowledge!
-#### Q1
-```java
-```
-Answer:
-> 
 
 
 
