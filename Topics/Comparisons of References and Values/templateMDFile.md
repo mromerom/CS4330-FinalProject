@@ -5,7 +5,7 @@
 ## References and Values
 Comparing two variables and checking if they are 'the same' ca be pretty tricky. For primitive types (int, double, char), a simple == is used. These primitive types only contain the values associated with the variable. However, many comparisons are made on objects (String, Double, CustomObj). These contain much more information about the variable than just its value. For example, in the topic Inheritance and Extension, Cabbage's have a weight and freshness, say you wanted had a few cabbage objects and wanted to see if any are the same. How could you do that? 
 
-Note 1: when talking about 'comparing references' and an object is said to have the 'same reference' as another, this means seeing if two objects point to the same address of 'one' object or the two objects have the same 'identity.' Similar to a duplicate, but the difference is that if you change one, the other is also changed. Life example: duplicates would be identical twins and 'same references' would be two souls trapped in one body.
+Note 1: when talking about 'comparing references' and an object is said to have the 'same reference' as another, this means seeing if two objects point to the same address of 'one' object or the two objects have the same 'identity.' Similar to a duplicate, but the difference is that if you change one, the other is also changed. Life example: duplicates would be identical twins and 'same references' would be two souls trapped in one body (they both have control over the singular body) *and/ or* a person with two nicknames (people *refer* to someone by two different names, but it's still the same person either time).
 Note 2: a custom object is a class a programmer makes, ex. Cabbage, Vegetable, etc. A non-custom object is a built-in object, ex. Java: Double, String, etc. Any instance of the word 'object' that is not preceeded by 'custom' is a non-custom/ built-in object.
 
 <br></br>
@@ -359,32 +359,85 @@ static func == (lhs: Cabbage, rhs: Cabbage) -> Bool{
 ```
 Note that Swift requires you to declare the new == as static. Every object of Cabbage has the **same** == function; if they didn't, we'd have to figure out a new way to compare them.
 
-Important takeaway: when creating new classes/ objects, know what kind of comparisons can be made with them and understand how to create a custom compare (overriden function) if needed.
+Important takeaway: when creating new classes/ objects, know what kind of comparisons can be made with them and understand how to create a custom compare (overriden function) if needed. It's also important to know that if one decides to override a comparison function, they will not be able to use it for anything but that (aka. might lose compare refernce ability). 
 
 
 <br></br>
 ### Practice Your Knowledge!
 #### Q1 (Q5 swift)
 ```java
+System.out.println("\nComparing objects with == (fixed): ");
+System.out.println("Cabbage cabbage5 = cabbage2;");
+Cabbage cabbage5 = cabbage2;
+System.out.println("cabbage2 == cabbage 5: " + (cabbage2 == cabbage5));
+// Q1: what will this output? what does this mean?
 ```
 Answer:
+> This will print out True, because cabbage5 references the same object as cabbage2. They both point to the same address of a cabbage object.
 #### Q2 (Q6 swift)
 ```java
+System.out.println("cabbage5.weight = 5;");
+cabbage5.weight = 5;
+System.out.println("cabbage5.weight = " + cabbage5.weight);
+System.out.println("cabbage2.weight = " + cabbage2.weight);
+System.out.println("cabbage2.weight == cabbage5.weight: " + (cabbage2.weight == cabbage5.weight));
+// Q2: based on your conclusion from Q1, what will these two statements output?
 ```
 Answer:
+> The outputs are: 5, 5, and True. Since the objects are now references to a singular object, any changes made by one reference (aka. cabbage2 or cabbage5) are 'also changed' in the other reference (it's not a *true* 'also change,' as they are same object with two different names).
 #### Q3 (not in the Swift code examples)
 ```java
+// fortunately we can use our knowledge of overriding
+//      to make this function do what we want it too
+//      (see the overriden function in Cabbage class)
+// Q3: a. what will these lines output if the function isn't overriden?
+//     b. will any print true? why?
+System.out.println("\nComparing Objects with overidden .equals(): ");
+System.out.println("cabbage1.equals(cabbage3): " + (cabbage1.equals(cabbage3)));
+System.out.println("cabbage1.equals(cabbage2): " + (cabbage1.equals(cabbage2)));
+System.out.println("cabbage1.equals(cabbage4): " + (cabbage1.equals(cabbage4)));
+System.out.println("cabbage2.equals(cabbage3): " + (cabbage2.equals(cabbage3)));
+System.out.println("cabbage2.equals(cabbage4): " + (cabbage2.equals(cabbage4)));
+System.out.println("cabbage3.equals(cabbage4): " + (cabbage3.equals(cabbage4)));
+System.out.println("cabbage2.equals(cabbage5): " + (cabbage2.equals(cabbage5)));
 ```
 Answer:
+> a. All of them will output false except the last line. Before overriding the function, these are just comparing references, and none of them are the same reference except cabbage5 and cabbage2.
+
+> b. Since cabbage5 and cabbage2 are references, and equals() tests for references, it will print True. 
 #### Q4 (Q7 swift)
 ```java
+System.out.println("cabbage2.equals(cabbage5): " + (cabbage2.equals(cabbage5)));
+// Q4: what will cabbage2.equals(cabbage5) output if equals() IS overriden?
 ```
 Answer:
+> Since cabbage5 and cabbage2 are references, the last line will print True no matter what equals() is comparing (given that equals() is either comparing references or is being overriden to compare specific variables between objects of the same type). 
 #### Q8 (not in the Java code examples)
 ```python
+# bonus round
+# Q8: what will the following lines output
+print("'Primitive' and String comparisons with ===:")
+print("i = " + String(i) + ", j = " + String(j) + ", k = " + String(k))
+print("i === j: " + String(i === j))
+print("i === k: " + String(i === k))
+print("j === k: " + String(j === k))
+print("str1 = " + str1 + ", str2 = " + str2 + ", str3 = " + str3)
+print("str1 === str3: " + String(str1 === str3))
+print("str1 === str2: " + String(str1 === str2))
+print("str2 === str3: " + String(str2 === str3))
+# hint: === tests for same reference or 'identity'
 ```
 Answer:
-
+> These statements will fail when compiling! The === only compares references! Swift's 'primitive' types don't have the ability to 'reference' one another. This is a perk of Swift as compared to Java because of the simplicity. Java has primitive types and classes for their primitive types: ex. primitive int vs. class version Integer. Swift eliminates the complexity of this.
+The java 'equivalent' of Q8's 'conundrum' is:
+```java
+System.out.println("Primitive Comparisons with equals():");
+System.out.println("i = " + i + ", j = " + j + ", k = " + k);
+System.out.println("i.equals(j): " + (i.equals(j)));
+System.out.println("i.equals(k): " + (i.equals(k)));
+System.out.println("k.equals(j): " + (k.equals(j)));
+```
+'Equivalent' meaning: primitive types do not have functions that can be performed on them, so int.equals(int) is illegal (just like int === int is illegal in Swift).
 
 
 
