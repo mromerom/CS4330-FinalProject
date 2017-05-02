@@ -76,6 +76,7 @@ Because classes are a key element of Object Oriented Programming, there are obvi
 
 ### Abstract Classes
 Unlike Swift, Java has abstract classes, which may or may not contain abstract methods and cannot be instantiated. With abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. They are somewhat similar to interfaces.
+<br></br>
 *Java*
 ```java
 public abstract class GraphicObject {
@@ -90,6 +91,7 @@ In order to declare a class in Java, we must specify what access modifier it has
 
 ### Structs
 Aside from classes, Swift also has structs, which are similar to classes. This is a feature that is not available in Java. The difference between a class and a struct in Swift, is that classes support inheritance, while structs do not. Additionally, structs are value types, meaning they are passed by value, while classes are reference types and are passed by reference.
+<br></br>
 *Swift*
 ```python
 struct Point {
