@@ -1,7 +1,7 @@
 # Comparison of Classes
-## This document will discuss how classes are implemented in Java and Swift.
+#### This document will discuss how classes are implemented in Java and Swift.
 
-## An essential concept of Object Oriented Programming, a class is simply a type of object.
+An essential concept of Object Oriented Programming, a class is simply a type of object.
 
 <br></br>
 ## Java's Implementation
