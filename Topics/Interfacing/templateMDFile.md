@@ -4,6 +4,8 @@
 <br></br>
 ## What is an interface?
 An interface is a programming structure that allows the computer to enforce certain properties on an object. Essentially, interfaces describe the actions an object can do.
+<br>
+They differ from [classes](https://github.com/mromerom/CS4330-FinalProject/blob/master/Topics/Classes/templateMDFile.md) in that an interface provides the “specification” of the method and field names, their parameters and return types, if any. Classes that implement this interface must define and implement a method or field exactly matching the “signature” of each specified method in the interface. Additionally, interfaces cannot contain executable code, contrary to classes.
 
 <br></br>
 ## Java's Integration
@@ -60,21 +62,13 @@ protocol Animal {
       	func makeNoise() -> String
 }
 
-implementation in an enum
-
-enum OnOffSwitch: Togglable {
-    case off, on
-    mutating func toggle() {
-        switch self {
-        case .off:
-            self = .on
-        case .on:
-            self = .off
-        }
-    }
+class Cat: Animal {
+	var lives = 9
+     	var limbs = 4
+     	func makeNoise() -> String {
+        return "meow"
+     }
 }
-var lightSwitch = OnOffSwitch.off
-lightSwitch.toggle()
 
 ```
 
