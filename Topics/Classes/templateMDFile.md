@@ -45,7 +45,7 @@ public class Bicycle {
 
 
 ## Swift's Implementation
-```python
+```
 class Person {
  
     var firstName: String?
@@ -93,7 +93,7 @@ In order to declare a class in Java, we must specify what access modifier it has
 Aside from classes, Swift also has structs, which are similar to classes. This is a feature that is not available in Java. The difference between a class and a struct in Swift, is that classes support inheritance, while structs do not. Additionally, structs are value types, meaning they are passed by value, while classes are reference types and are passed by reference.
 <br></br>
 *Swift*
-```python
+```
 struct Point {
  
     var x: Int
