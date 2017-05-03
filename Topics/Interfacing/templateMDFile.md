@@ -53,7 +53,7 @@ public class OperateBMW760i implements OperateCar {
 ```
 
 ## Swift's Integration
-```python
+```
 protocol Animal {
 	var lives:Int { get set }
       	var limbs:Int { get }
