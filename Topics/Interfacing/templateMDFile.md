@@ -1,12 +1,89 @@
-# Hello!
-## Please use me to develop the documentation for this topic!
+# Interfacing
+#### *This document will explain interfacing.* 
 
-# I'm and h1!
-## I'm and h2!
-### I'm and h3!
+<br></br>
+## What is an interface?
+An interface is a programming structure that allows the computer to enforce certain properties on an object. Essentially, interfaces describe the actions an object can do.
 
-* I'm and unordered list
-	* I'm a sub unordered list!
+<br></br>
+## Java's Integration
+```java
+public interface OperateCar {
 
-1. I'am an ordered list.
-	1. I'm a sub ordered list!
+   // constant declarations, if any
+
+   // method signatures
+   
+   // An enum with values RIGHT, LEFT
+   int turn(Direction direction,
+            double radius,
+            double startSpeed,
+            double endSpeed);
+   int changeLanes(Direction direction,
+                   double startSpeed,
+                   double endSpeed);
+   int signalTurn(Direction direction,
+                  boolean signalOn);
+   int getRadarFront(double distanceToCar,
+                     double speedOfCar);
+   int getRadarRear(double distanceToCar,
+                    double speedOfCar);
+         ......
+   // more method signatures
+}
+
+// implementation in a class
+
+public class OperateBMW760i implements OperateCar {
+
+    // the OperateCar method signatures, with implementation --
+    // for example:
+    int signalTurn(Direction direction, boolean signalOn) {
+       // code to turn BMW's LEFT turn indicator lights on
+       // code to turn BMW's LEFT turn indicator lights off
+       // code to turn BMW's RIGHT turn indicator lights on
+       // code to turn BMW's RIGHT turn indicator lights off
+    }
+
+    // other members, as needed -- for example, helper classes not 
+    // visible to clients of the interface
+}
+
+
+```
+
+## Swift's Integration
+```python
+protocol Animal {
+	var lives:Int { get set }
+      	var limbs:Int { get }
+      	func makeNoise() -> String
+}
+
+implementation in an enum
+
+enum OnOffSwitch: Togglable {
+    case off, on
+    mutating func toggle() {
+        switch self {
+        case .off:
+            self = .on
+        case .on:
+            self = .off
+        }
+    }
+}
+var lightSwitch = OnOffSwitch.off
+lightSwitch.toggle()
+
+```
+
+<br></br>
+## Comparing
+As you may have noticed, Swift, while having the ability to interface, does not call its structure an "interface"; in Swift, interfaces are called "protocols". For the most part, protocols in Swift and interfaces in Java are the same, but there are some small differences between the two.
+
+1. Swift protocols can also specify properties that must be implemented (i.e. fields)<br>
+2. Swift protocols need to deal with value/reference through the use of the mutating keyword (because protocols can be <br> 3.implemented by structs and classes)you can combine protocols at any point with the protocol<> keyword. For example, declaring a function parameter that must adhere to protocol A and B as:
+```
+	func foo ( var1 : protocol<A, B> ){}
+```
