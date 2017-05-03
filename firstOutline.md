@@ -20,7 +20,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Types
 * This topic will go over value types within the languages and how they're used.
-* written by:
+* written by: **Daivd Duenow**
 * reviewed by:
 ### Classes
 * This topic will go over how classes are implemented and used.
