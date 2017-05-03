@@ -75,7 +75,7 @@ class Person {
 Because classes are a key element of Object Oriented Programming, there are obvious similarities when declaring classes in Java and Swift. However, there are several differences.
 
 ### Abstract Classes
-Unlike Swift, Java has abstract classes, which may or may not contain abstract methods and cannot be instantiated. With abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. They are somewhat similar to interfaces.
+Unlike Swift, Java has abstract classes, which may or may not contain abstract methods and cannot be instantiated. With abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. They are somewhat similar to [interfaces](https://github.com/mromerom/CS4330-FinalProject/edit/master/Topics/Interfacing/templateMDFile.md).
 <br></br>
 *Java*
 ```java
