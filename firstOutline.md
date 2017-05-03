@@ -24,7 +24,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Classes
 * This topic will go over how classes are implemented and used.
-* written by:
+* written by: **Matthew Romero Moore**
 * reviewed by:
 ### Instance Reference Name
 * This topic will go over keywords such as this, self, and super.
@@ -36,7 +36,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Interfacing
 * This topic will go over how interfacing is implemented.
-* written by:
+* written by: **Matthew Romero Moore**
 * reviewed by:
 ### Inheritance and Extension
 * This topic will go over inheritance and extensions of classes.
@@ -57,7 +57,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Errors and Exception Handling
 * This topic will go over how the languages deal with errors and exceptions.
-* written by: **Payton Hosna**
+* written by: **Matthew Romero Moore**
 * reviewed by:
 ### Lambda Expression, Closures, and Functions as Types
 * This topic will go over how the languages implement/ use lambda expressions, closures, and functions as types.
