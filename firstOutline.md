@@ -16,10 +16,10 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Name Spaces
 * This topic will go over the uses and implementations of name spaces.
-* written by:
+* written by: **David Duenow**
 * reviewed by:
 ### Types
-* This topic will go over value types within the languages and how they're used.
+* This topic will go over types within the languages and how they're used.
 * written by: **Daivd Duenow**
 * reviewed by:
 ### Classes
@@ -45,7 +45,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Reflection
 * This topic will go over reflection and its support by the languages.
-* written by:
+* written by: **David Duenow**
 * reviewed by:
 ### Comparisons of References and Values
 * This topic will go over how values are compared.
@@ -65,7 +65,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Event Handlers and Listeners
 * This topic will go over how the languages implement/ use event handlers and listeners.
-* written by:
+* written by: **David Duenow**
 * reviewed by:
 ### Singleton
 * This topic will go over how the languages implement singletons.
@@ -81,5 +81,5 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Multithreading
 * This topic will go over the languages' use of multithreading.
-* written by:
+* written by: **David Duenow**
 * reviewed by:
