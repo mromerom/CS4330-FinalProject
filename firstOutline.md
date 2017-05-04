@@ -54,7 +54,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 ### Null and Nil
 * This topic will go over how the languages use null and/ or nil.
 * written by: 
-* reviewed by:
+* reviewed by: **Matthew Romero Moore**
 ### Errors and Exception Handling
 * This topic will go over how the languages deal with errors and exceptions.
 * written by: **Matthew Romero Moore**
