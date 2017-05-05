@@ -22,7 +22,7 @@ Ball a = b;
 ```
 ### Reference Passed By Value
 ```
-public void test(Point arg1, Point arg2)
+public void tricky(Point arg1, Point arg2)
 {
   arg1.x = 100;
   arg1.y = 100;
@@ -78,6 +78,6 @@ a.data = 42
 //Upon printing a would print 42 and b would print 42 showing that they are using value type and just being copied.
 ```
 ## Conclusion
-It is not surprising that Java and Swift have very close definitions of their data types as they are both Object-Oriented languages. Most notable is that of Java's primitive data types are they are different from their reference type counter part. Also important to remember Java objects are passed by value not by reference. Please see example above. I would like to say that I prefer Swift's implementation of their value and reference type data because you do not need to worry about the difference of int and Integer as they do not exist in Swift in the same capacity as in Java. There is Int and Integer in which you can use both interchangeably. This is not a correct coding method as Integer is the protocol Int uses. So it is always correct to refer to an integer as an Int.
+It is not surprising that Java and Swift have very close definitions of their data types as they are both Object-Oriented languages. Most notable is that of Java's primitive data types are they are different from their reference type counter part. Also important to remember Java objects are passed by value not by reference. Please see example above. I would like to say that I prefer Swift's implementation of their value and reference type data because you do not need to worry about the difference of int and Integer as they do not exist in Swift in the same capacity as in Java. There is Int and Integer in which you can use both interchangeably. This is not a correct coding method as Integer is the protocol Int uses. So it is always correct to refer to an integer as an Int. Also from my research I found it is not possible to make new value types for either language. It is only possible to make new reference types in both languages.
 
 
