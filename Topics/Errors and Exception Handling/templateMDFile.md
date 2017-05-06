@@ -148,18 +148,18 @@ func sendFile() -> String {
 ## Errors
 Types of Errors:
 * run-time: occurs while program is running.
-  <br>
+  <br></br>
   1. Logic: produces the wrong output.
   2. Memory Leak: caused by continuous RAM use whil program is running.
 * compile-time: prevents the program from compiling.
-<br>
+<br></br>
   1. Syntax error: a character or string incorrectly placed in a command or instruction that causes a failure in execution.
-* syntax
 
-<br>
+<br></br>
+
 ## Comparing
-
 Java exception handling is composed of try blocks, catch blocks, and finally blocks. A try block will *try* to execute the code it contains. A catch block will *catch* an exception should the code in the try block fail. The finally block will always execute, once the try block exits. Example:
+<br></br>
 ```java
 public void writeList() {
     PrintWriter out = null;
@@ -189,10 +189,10 @@ public void writeList() {
     }
 }
 ```
-<br>
+<br></br>
 Error handling in Swift resembles exception handling in other languages, with the use of the try, catch and throw keywords. Unlike exception handling in many languages, error handling in Swift does not involve unwinding the call stack, a process that can be computationally expensive. As such, the performance characteristics of a throw statement are comparable to those of a return statement.
-<br>
-Because Swift has optionals, users have the ability to write really concise error handling using ```try```, should you want all the errors to be handled in the same way. Example:
+<br></br>
+Because Swift has optionals, users have the ability to write really concise error handling using "try", should you want all the errors to be handled in the same way. Example:
 ```
 func fetchData() -> Data? {
     if let data = try? fetchDataFromDisk() { return data }
@@ -200,7 +200,7 @@ func fetchData() -> Data? {
     return nil
 }
 ```
-There also exists the possibility to disable error propagation using using ```try!```. Example:
+There also exists the possibility to disable error propagation using using "try!. Example:
 ```
 let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
 ```
