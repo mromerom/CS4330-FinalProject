@@ -20,7 +20,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Types
 * This topic will go over types within the languages and how they're used.
-* written by: **Daivd Duenow**
+* written by: **David Duenow**
 * reviewed by:
 ### Classes
 * This topic will go over how classes are implemented and used.
@@ -53,7 +53,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Null and Nil
 * This topic will go over how the languages use null and/ or nil.
-* written by: **Matthew Romero Moore*
+* written by: **Matthew Romero Moore**
 * reviewed by:
 ### Errors and Exception Handling
 * This topic will go over how the languages deal with errors and exceptions.
@@ -77,7 +77,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Functional Programming
 * This topic will go over the languages' support of functional programming.
-* written by:
+* written by: **Functional Programming*
 * reviewed by:
 ### Multithreading
 * This topic will go over the languages' use of multithreading.
