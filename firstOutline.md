@@ -53,8 +53,8 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Null and Nil
 * This topic will go over how the languages use null and/ or nil.
-* written by: 
-* reviewed by: **Matthew Romero Moore**
+* written by: **Matthew Romero Moore*
+* reviewed by:
 ### Errors and Exception Handling
 * This topic will go over how the languages deal with errors and exceptions.
 * written by: **Matthew Romero Moore**
@@ -73,7 +73,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Procedural Programming
 * This topic will go over the languages' support of procedural programming.
-* written by:
+* written by: **Matthew Romero Moore**
 * reviewed by:
 ### Functional Programming
 * This topic will go over the languages' support of functional programming.
