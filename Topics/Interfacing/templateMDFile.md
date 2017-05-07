@@ -8,7 +8,7 @@ An interface is a programming structure that allows the computer to enforce cert
 They differ from [classes](https://github.com/mromerom/CS4330-FinalProject/blob/master/Topics/Classes/templateMDFile.md) in that an interface provides the “specification” of the method and field names, their parameters and return types, if any. Classes that implement this interface must define and implement a method or field exactly matching the “signature” of each specified method in the interface. Additionally, interfaces cannot contain executable code, contrary to classes.
 
 <br></br>
-## Java's Integration
+## Java's Implementation
 ```java
 public interface OperateCar {
 
@@ -54,7 +54,7 @@ public class OperateBMW760i implements OperateCar {
 
 ```
 
-## Swift's Integration
+## Swift's Implementation
 ```
 protocol Animal {
 	var lives:Int { get set }
