@@ -3,7 +3,7 @@
 
 <br></br>
 ## Lambda Expressions, Closures, and Functions as Types
-A function as a type is a function stored in a variable. A lambda expression and closure are ADD HERE. Lambda expression can only be implemented with a function inside a functional interface; a functional interface is ADD HERE. These eliminate the need to create  ADD HERE.
+A function type is what the function takes in as parameters and returns; functions do not have to receive or return anything. A lambda expression and closure are ADD HERE. Lambda expression can only be implemented with a function inside a functional interface; a functional interface is ADD HERE. These eliminate the need to create  ADD HERE. Closures can easily be created as functions and/ or stored into variables to easily call the function.
 
 
 <br></br>
