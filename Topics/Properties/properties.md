@@ -255,7 +255,7 @@ strawberry.strawberriesEaten()
 ### Setters and Getters
 ### Backing Variables
 ### Computed Properties
-
+Swift and Java computed variables are the same thing stated in different things. In addition, computed variables in Swift can be more unique and can be a combination of multiple stored properties on the struct/ class. Each variable as a getter and setter associated with it, but Swift's is more direcly associated with the computed property. With Java, there doesn't *need* to be a variable associated with the getters and setters. 
 
 
 
