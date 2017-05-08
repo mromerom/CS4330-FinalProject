@@ -7,7 +7,7 @@
 Setters (also known as *mutators*) and getters (also known as *accessors*) are used to control changes to a variable. Setters and getters allow for finer control of access rights, and are instrumental in the property of encapsulation. As their names imply, a setter will set the data, and the getter will get the data (while protecting it from being accessed by external modules).
 ### Backing Variables
 ### Computed Properties
-in Swift, a computed property is a property that has a getter and setter applied to it. In Java, 
+in Swift, a computed property is a property that has a getter and setter applied to it, and the computed property is not stand-alone; it has another variable(s) in the same struct or class that it uses to 'compute' itself (itself being the computed property/ a new property). In Java, the variable itself is set to private, and set and get functions are 'attached' to it, aka. writing functions called get<variable_name> and set<variable_name> (see the Java computed properties example).
 
 <br></br>
 ## Java's Implementation
@@ -31,6 +31,87 @@ public class Student {
 ```
 ### Computed Properties
 ```java
+public class Cabbage {
+    final String typeOfFood = "cabbage";
+    String typeOfCabbage;
+    double weight;
+    private String fullTypeName;
+    
+    public Cabbage(double weight, String typeOfCabbage){
+        this.weight = weight;
+        this.typeOfCabbage = typeOfCabbage;
+        fullTypeName = getFullTypeName();
+    }
+    
+    public String getFullTypeName(){
+        return typeOfCabbage + " " + typeOfFood;
+    }
+    public void setFullTypeName(String typeOfCabbage){
+        this.typeOfCabbage = typeOfCabbage;
+        fullTypeName = getFullTypeName();
+    }
+}
+
+public class Strawberry {
+    final String typeOfFood = "strawberry";
+    String typeOfStrawberry;
+    double weight;
+    private String fullTypeName;
+    
+    public Strawberry(double weight, String typeOfStrawberry, String fullTypeName){
+        this.weight = weight;
+        this.typeOfStrawberry = typeOfStrawberry;
+        this.fullTypeName = fullTypeName;
+    }
+    
+    public String getFullTypeName(){
+        return fullTypeName;
+    }
+    public void setFullTypeName(String typeOfStrawberry){
+        this.typeOfStrawberry = typeOfStrawberry;
+        fullTypeName = typeOfStrawberry + " " + typeOfFood;
+    }
+}
+
+public static void main(String[] args) {
+    String cName = "january king";
+    String sFName = "strawberry";
+    String sTName = "fragaria vesca";
+    String sFTName = sFName + " " + sTName;
+    Cabbage cabbage = new Cabbage(2, "january king");
+    Strawberry strawb = new Strawberry(0.1, sTName, sFTName);
+
+
+    System.out.println("Cabbage computed properties: get:");
+    System.out.println("\tCabbage: food type: " + cabbage.typeOfFood);
+    System.out.println("\tCabbage: cababge type: " + cabbage.typeOfCabbage);
+    System.out.println("\tCabbage: full type: " + cabbage.getFullTypeName());
+    System.out.println("Cabbage computed properties: set:");
+    System.out.println("\tCabbage: food type: " + cabbage.typeOfFood);
+    cabbage.setFullTypeName("bok choy");
+    System.out.println("\tCabbage: cababge type: " + cabbage.typeOfCabbage);
+    System.out.println("\tCabbage: full type: " + cabbage.getFullTypeName());
+    // computed properties are private properties
+    //      that are 'set' and 'gotten'('get')
+    //      through methods
+    // this is a means of protecting the roperty
+    //      itself, so no direct access is
+    //      allowed (aka. cabbage.fullTypeName)
+
+
+    System.out.println("\nStrawberry computed properties: set in constructor:");
+    System.out.println("\tStrawberry: food type: " + strawb.typeOfFood);
+    System.out.println("\tStrawberry: Strawberry type: " + strawb.typeOfStrawberry);
+    System.out.println("\tStrawberry: full type: " + strawb.getFullTypeName());
+    System.out.println("Strawberry computed properties: set:");
+    System.out.println("\tStrawberry: food type: " + strawb.typeOfFood);
+    strawb.setFullTypeName("fragaria x ananassa");
+    System.out.println("\tStrawberry: Strawberry type: " + strawb.typeOfStrawberry);
+    System.out.println("\tStrawberry: full type: " + strawb.getFullTypeName());
+    // note: in this case, it's probably better to 
+    //      set and get through the functions alone
+    //      instead of the constructor
+}
 ```
 
 <br></br>
@@ -181,12 +262,17 @@ strawberry.strawberriesEaten()
 <br></br>
 ### Practice Your Knowledge!
 
-#### Q1 (Q? swift)
-```java
+#### Computed Properties: Q1 swift (no questions in Java)
+```python
+let strawberry = Strawberry(weight: 0.10, numBerries: 35, name: "Fragaria vesca", berriesEaten: 5, numBerriesLeft: 0)
+strawberry.strawberryToString()
+strawberry.strawberriesEaten()
+# Q1: why do we set numBerriesLeft to 0? 
+#      wouldn't it be 30?
 ```
 Answer:
 
-> 
+> We have to set it to 0, because when dealing with the berriesLeft variable, it increments the berriesEaten variable. This is so that when we 'get' berriesLeft, it's numBerries - berriesEaten. Since, eating something constantly decrements the original total, we have to keep track of berriesEaten, which affects berriesLeft. If we put 30, then berriesLeft would set berriesEaten +30, making it 35, and berriesLeft would be numBerries(35)-berriesEaten(35) = 0! 
 
 
 
