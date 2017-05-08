@@ -4,6 +4,7 @@
 <br></br>
 ## Properties
 ### Setters and Getters
+Setters (also known as *mutators*) and getters (also known as *accessors*) are used to control changes to a variable. Setters and getters allow for finer control of access rights, and are instrumental in the property of encapsulation. As their names imply, a setter will set the data, and the getter will get the data (while protecting it from being accessed by external modules).
 ### Backing Variables
 ### Computed Properties
 in Swift, a computed property is a property that has a getter and setter applied to it. In Java, 
@@ -12,6 +13,18 @@ in Swift, a computed property is a property that has a getter and setter applied
 ## Java's Implementation
 ### Setters and Getters
 ```java
+public class Student {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    
+    public void setName(String newName) {
+        name = newName;
+    }
+}
 ```
 ### Backing Variables
 ```java
@@ -23,7 +36,17 @@ in Swift, a computed property is a property that has a getter and setter applied
 <br></br>
 ## Swift's Implementation
 ### Setters and Getters
-```python
+Contrary to Java, setters and getters in Swift do not need to be declared on publicly available variables. Additionally, setter and getter implementation can be overwritten in Swift for all types of variables, including private.
+```
+var variableName: dataType {
+    get {
+        //code to execute
+        return someValue
+    }
+    set(newValue) {
+        //code to execute
+    }
+}
 ```
 ### Backing Variables
 ```python
