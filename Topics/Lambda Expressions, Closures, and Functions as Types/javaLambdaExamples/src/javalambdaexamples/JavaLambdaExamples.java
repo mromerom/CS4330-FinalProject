@@ -5,6 +5,8 @@
  */
 package javalambdaexamples;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author MUST-2
@@ -85,10 +87,39 @@ public class JavaLambdaExamples {
         // the function type is (String)->(String)
         //      it receives a String and returns String
         
-        // these lambda expressions act as 'quick' functions
+        
+        // can we use a lambda expression in a functional interface? 
+        AllFoods allFoods = new AllFoods();
+        ArrayList<String> nuts = new ArrayList<>();
+        ArrayList<Integer> nutAmounts = new ArrayList<>();
+        nuts.add(nName);
+        nuts.add("cashew");
+        nuts.add("pistachio");
+        nuts.add("macadamia");
+        nutAmounts.add(nAmount);
+        nutAmounts.add(13);
+        nutAmounts.add(12);
+        nutAmounts.add(7);
+        System.out.println("\nBefore using a closure in a function call: ");
+        allFoods.printNutsAndAmounts(nuts, nutAmounts);
+        System.out.println("After using a closure in a function call: to print only even amounts: ");
+        allFoods.printNutsAndAmounts(nuts, nutAmounts, n -> n%2 == 0);
+        // the lambda expression can be passed as a parameter
+        //      it also could've been used inside the function
+        //      if that were so, then we couldn't print all the odd
+        System.out.println("After using a closure in a function call: to print only odd amounts: ");
+        allFoods.printNutsAndAmounts(nuts, nutAmounts, n -> n%2 != 0);
+        // or with only a certain range of pieces
+        System.out.println("After using a closure in a function call: to print only amounts < 15: ");
+        allFoods.printNutsAndAmounts(nuts, nutAmounts, n -> n < 15);
+        // this is all possible due to Predicate being a functional interface
+        // this is also known as passing a 'behavior'
+        
+        // these lambda expressions act as 'quick' functions (anonymous)
         //      they can have multiple lines, ex. lines 63-67
         //      or they can be simple, like the rest of the examples
-        // lambdas can only be made from functional interfaces
+        // to use a lambda expression, the expression MUST be
+        //      from a functional interface
     }
     
 }
