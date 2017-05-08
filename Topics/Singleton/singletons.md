@@ -3,7 +3,9 @@
 
 <br></br>
 ## Singeltons
-Singletons are a restriction on a class that allows for only ONE object to be created. Being thread-safe means ADD HERE. Lazy instantiation is ADD HERE.
+Singletons are a restriction on a class that allows for only **_one_** object to be created. Being thread-safe means that two threads that act upon the singleton will come away with the same instance, meaning, if one is asleep after invoking the singleton, then the other cannot act and change it (if it's new/ lazy) while the other is asleep. Lazy instantiation is creating the object outside of the class. The general way, most safe, is to create the object instance *within* the class, so it's there already and no new, *unique* instances can be created.
+
+Singletons are useful when only one object of a type is needed, and it needs to be used across many programs within a large application. Each can access and us it; however, they can, in no way, modify or change it once it has been instantiated.
 
 
 <br></br>
@@ -511,7 +513,11 @@ runner10.globalRunnerForcedToString()
 
 <br></br>
 ## Comparing
+Swift and Java do things a little differently. It's much easier to create a thread-safe, lazy singleton in Java than Swift. However, in Swift, the only worry is to make sure only one object is created; thread-safety is handled and doesn't need to be explicitly addressed. In order to create a true Swift singleton, one must follow the syntax of the last couple examples in the Swift exmaple code (namely, the classes with 'ForcedSingleton' in the name).
 
+As far as pure syntax, Java needs functions and an instance variable. Swift creates class variables, but it can use functions with variables. Each explicitly use 'static', as it stays the same throughout all new class instances (not that singletons will allow for multiple, *unique* instances). 
+
+In the end, private constructor (init()'s) are *key*.
 
 
 
