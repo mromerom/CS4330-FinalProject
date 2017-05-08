@@ -233,5 +233,71 @@ public static void main(String[] args) {
 
 
 <br></br>
-## Practice 
+### Practice Your Knowledge!
+To practice this new knowledge, can you solve the answers to Q1-3 in the Java sample code (and Q6-10 in the Swift example code)?
+Try running the Java and Swift programs! (Hint: Q3 is outlined in the code following it, i.e. the thread-safe code example)
+
+#### Q1
+```java
+// Q1: what will the following functions print
+//      out if we make a second runner?
+System.out.println("Q1: These prints are the result of making a " 
+		    +"runner2 of type Runner");
+Runner runner2 = Runner.getInstance();
+System.out.print("\t");
+runner2.printName();
+System.out.print("\t");
+runner2.printMiles();
+System.out.print("\t");
+runner2.runnerToString();
+```
+Answer:
+
+> It'll print out exactly what runner1 prints out! The instance is already made, so getInstance() will always return the one instance.
+
+#### Q2
+```java
+// Q2: what happens if we try to execute the following?
+System.out.println("Q2: These prints are a result of making a new instance runner 4 of Forrest Gump: ");
+LazyRunner runner4 = LazyRunner.getInstance("Forrest Gump", 19024.0);
+System.out.print("\t");
+runner4.printName();
+System.out.print("\t");
+runner4.printMiles();
+System.out.print("\t");
+runner4.runnerToString();
+
+// runner4 is a lazy instance; the LazyRunner on instantiation 
+//	allows for the creation of the object with a name
+//	and miles sent to it
+```
+Answer:
+
+> This will still print runner3's information. The static, and singular, instance was already created once runner3 was created. 
+
+
+#### Q3
+```java
+// Q3: Do you see any issue with this?
+//      Lazy allows for in time instantiation,
+//      whereas regular is created in the moment,
+//      and nothing else has any chance to make 
+//      it different.
+//      So, if lazy can create the object in the 
+//      moment and send parameters, what could
+//      be an issue with this?
+
+
+// 'this' in the beginning is referencing using
+//	lazy instantiation
+```
+Answers: 
+
+> The issue is that if one thread tries to instantiate the lazy instance, it will sleep for a short period. Another thread could also access the instance near the same time. They could each be trying to create a new instance. Collision would happen, and a second instace could be created, which is the *exact* opposite of what a singleton is. Ways around this include regular singletons, i.e. Runner, or synchronizing the LazyRunner (i.e. LazyRunnerThreadSafe).
+
+
+
+
+
+
 
