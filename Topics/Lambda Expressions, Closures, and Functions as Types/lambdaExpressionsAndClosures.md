@@ -3,9 +3,9 @@
 
 <br></br>
 ## Lambda Expressions, Closures, and Functions as Types
-A function type is what the function takes in as parameters and returns; functions do not have to receive or return anything. A lambda expression and closure are ways to implement functions. Lambda expressions are anonymous functions and can only be implemented with a function inside a functional interface; a functional interface is ADD HERE. These eliminate the need to create  ADD HERE. Closures can easily be created as functions and/ or stored into variables to easily call the function. Closures are much more versatile than lambda expressions and can access variables not in its parameter list.
+A function type is what the function takes in as parameters and returns; functions do not have to receive or return anything. A lambda expression and closure are ways to implement functions. Lambda expressions are anonymous functions and can only be implemented with a function inside a functional interface; a functional interface is an interface with exactly *one* abstract method to be written as needed. Closures can easily be created as functions and/ or stored into variables to easily call the function. Closures are much more versatile than lambda expressions and can access variables not in its parameter list.
 
-
+Closures and lambda expressions allow for shorter, easier, and more readable code. Anything you can do with a closure is possible to do without one, but the use of them makes the project easier to debug (due to increased readability and shortening of code). They're basically very nice shortcuts for repetitive or more-complicated-than-needed code.
 
 
 <br></br>
@@ -25,6 +25,26 @@ public interface Nut {
 
 public interface Bread {
     public String bready(String type);
+}
+
+public class AllFoods {
+    public AllFoods(){}
+    
+    public void printNutsAndAmounts(ArrayList<String> nuts, ArrayList<Integer> amounts){
+        System.out.println("Here are my nuts: ");
+        for(int i=0; i<nuts.size() && i<amounts.size(); i++){
+            System.out.println("\t"+ nuts.get(i) + ": "+amounts.get(i)+" pieces");
+        }
+    }
+    
+    public void printNutsAndAmounts(ArrayList<String> nuts, ArrayList<Integer> amounts, Predicate<Integer> p){
+        System.out.println("Here are my nuts with a limited amount of pieces: ");
+        for(int i=0; i<nuts.size() && i<amounts.size(); i++){
+            if(p.test(amounts.get(i))){
+                System.out.println("\t"+ nuts.get(i) + ": "+amounts.get(i)+" pieces");
+            }
+        }
+    }
 }
 
 
@@ -99,10 +119,40 @@ public static void main(String[] args) {
     // the function type is (String)->(String)
     //      it receives a String and returns String
 
-    // these lambda expressions act as 'quick' functions
+
+    // can we use a lambda expression in a functional interface? 
+    AllFoods allFoods = new AllFoods();
+    ArrayList<String> nuts = new ArrayList<>();
+    ArrayList<Integer> nutAmounts = new ArrayList<>();
+    nuts.add(nName);
+    nuts.add("cashew");
+    nuts.add("pistachio");
+    nuts.add("macadamia");
+    nutAmounts.add(nAmount);
+    nutAmounts.add(13);
+    nutAmounts.add(12);
+    nutAmounts.add(7);
+    System.out.println("\nBefore using a closure in a function call: ");
+    allFoods.printNutsAndAmounts(nuts, nutAmounts);
+    System.out.println("After using a closure in a function call: to print only even amounts: ");
+    allFoods.printNutsAndAmounts(nuts, nutAmounts, n -> n%2 == 0);
+    // the lambda expression can be passed as a parameter
+    //      it also could've been used inside the function
+    //      if that were so, then we couldn't print all the odd
+    System.out.println("After using a closure in a function call: to print only odd amounts: ");
+    allFoods.printNutsAndAmounts(nuts, nutAmounts, n -> n%2 != 0);
+    // or with only a certain range of pieces
+    System.out.println("After using a closure in a function call: to print only amounts < 15: ");
+    allFoods.printNutsAndAmounts(nuts, nutAmounts, n -> n < 15);
+    // this is all possible due to Predicate being a functional interface
+    // this is also known as passing a 'behavior'
+
+
+    // these lambda expressions act as 'quick' functions (anonymous)
     //      they can have multiple lines, ex. lines 63-67
     //      or they can be simple, like the rest of the examples
-    // lambdas can only be made from functional interfaces
+    // to use a lambda expression, the expression MUST be
+    //      from a funcitonal interface
 }
 ```
 
@@ -293,7 +343,24 @@ fruitAndBread(fruit: fName, bread: bName, closure: fruitAndBreadClosure)
 
 <br></br>
 ## Comparing
-Java only allows for lambda expressions in a specific circustance. 
+Java only allows for lambda expressions in a specific circumstance. However, closures must be evaluated every single time they're called, because they 'close' over variables and methods not in there environment (i.e. those variables may have changed and could change the result of the closure). That being said, closures are much more versatile than lambda expressions, and they can be viewed as better than lambda expressions, especially with the function-as-a-variable feature that they allow.
+
+The similarities are their standard definitions, with very slight differences:
+Java:
+```java
+SomeNewFuncInterfaceObj newObj1 = (/*parameters here*/) ->{/*code here*/};
+// the return type does not need to be specified
+//      and can be simplified as so
+SomeNewFuncInterfaceObj newObj1 = (/*parameters here*/) ->(/*return-only statement here*/);
+```
+Swift:
+```python
+var someClosureVar: (/*parameters*/) -> (/*return type*/) = {/*code here*/}
+// or
+var someSecondClosure = (/*parameters*/) -> (/*return type*/) = {/*code here*/}
+```
+
+The calling is also similar (like any function), but java uses an object to call them. The function types are pretty easy to discern; however, Java doesn't ask for specification on return type.
 
 
 
