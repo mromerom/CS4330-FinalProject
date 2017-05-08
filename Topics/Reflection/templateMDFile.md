@@ -17,6 +17,43 @@ The above code snippet will print all methods gathered from a selected class.
 String className = this.getClass().getSimpleName();
 ```
 The code snippet above will print out the simple name of the referenced class.
+```
+package com.tutorialspoint;
+
+import java.util.GregorianCalendar;
+
+public class ObjectDemo {
+
+   public static void main(String[] args) {
+
+      // create a new ObjectDemo object
+      GregorianCalendar cal = new GregorianCalendar();
+
+      // print current time
+      System.out.println("" + cal.getTime());
+
+      // print the class of cal
+      System.out.println("" + cal.getClass());
+
+      // create a new Integer
+      Integer i = new Integer(5);
+
+      // print i
+      System.out.println("" + i);
+
+      // print the class of i
+      System.out.println("" + i.getClass());
+   }
+}
+```
+Above code would have the following output.
+```
+Sat Sep 22 00:31:24 EEST 2012
+class java.util.GregorianCalendar
+5
+class java.lang.Integer
+```
+This code example is fron [Tutorialpoint.com](https://www.tutorialspoint.com/java/lang/object_getclass.htm)
 
 These are just a few things you can do with reflection in java. There is a large expansion of knowledge out there for diverse ways to use reflection. While this is good it can also be dangerous as you can find out the innerworkings of a program potentially. Also, reflection has overhead associated with it so it may not be the most efficient way to discover the interworking of a class or application if you have access to source code.
 
