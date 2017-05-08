@@ -220,11 +220,11 @@ public static void main(String[] args) {
 <br></br>
 ## Swift's Implementation
 ```python
-// this is the oldest and definitely 
-//      not prettiest version of
-//      singleton
-// it's also outdated and no longer
-//      used in Swift 3
+# this is the oldest and definitely 
+#      not prettiest version of
+#      singleton
+# it's also outdated and no longer
+#      used in Swift 3
 '''class OldRunner{
     var name: String = ""
     var miles: Double = 0.0
@@ -519,10 +519,10 @@ runner10.globalRunnerForcedToString()
 
 <br></br>
 ### Practice Your Knowledge!
-To practice this new knowledge, can you solve the answers to Q1-3 in the Java sample code (and Q6-10 in the Swift example code)?
+To practice this new knowledge, can you solve the answers to Q1-3 in the Java sample code (and Q4-7 in the Swift example code)?
 Try running the Java and Swift programs! (Hint: Q3 is outlined in the code following it, i.e. the thread-safe code example)
 
-#### Q1
+#### Q1 (Q4 swift)
 ```java
 // Q1: what will the following functions print
 //      out if we make a second runner?
@@ -540,7 +540,7 @@ Answer:
 
 > It'll print out exactly what runner1 prints out! The instance is already made, so getInstance() will always return the one instance.
 
-#### Q2
+#### Q2 (Q5 and similar to Q6 swift)
 ```java
 // Q2: what happens if we try to execute the following?
 System.out.println("Q2: These prints are a result of making a new instance runner 4 of Forrest Gump: ");
@@ -580,7 +580,18 @@ Answers:
 
 > The issue is that if one thread tries to instantiate the lazy instance, it will sleep for a short period. Another thread could also access the instance near the same time. They could each be trying to create a new instance. Collision would happen, and a second instace could be created, which is the *exact* opposite of what a singleton is. Ways around this include regular singletons, i.e. Runner, or synchronizing the LazyRunner (i.e. LazyRunnerThreadSafe).
 
+#### Q7
+```pythom
+# Q7: what happens if we execute the following?
+'''let runner8 = StructRunnerForcedSingleton(name: "Leslie Knope", miles: 0.0)
+print("\nSingleton type1: struct: forced, true singleton: new object try: ")
+runner8.printName()
+runner8.printMiles()
+runner8.structRunnerForcedToString()'''
+```
+Answers: 
 
+> This won't execute! The constructor or init() for StructRunnerForcedSingleton is private, adn therefore, nothing but its own class can have access to it.
 
 
 
