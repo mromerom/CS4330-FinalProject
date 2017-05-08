@@ -49,7 +49,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 ### Lambda Expression, Closures, and Functions as Types
 * This topic will go over how the languages implement/ use lambda expressions, closures, and functions as types.
 * written by: **Payton Hosna** 
-Event Handlers and Listeners
+### Event Handlers and Listeners
 * This topic will go over how the languages implement/ use event handlers and listeners.
 * written by: **David Duenow** 
 ### Singleton
