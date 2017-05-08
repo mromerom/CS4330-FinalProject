@@ -32,7 +32,7 @@ P2.X: 2 P2.Y: 2
 P1.X: 4 P1.Y: 4
 P2.X: 1 P2.Y: 1
 ```
-* * So now you might be confused because during our fun method we did set p1 equal to p2 and p2 equal to p1. Since these are pass via value we set p1 x and y to 4. Afterwards, we just swapped the values of p1 to p2. Meaning that p2 in fact was point to p1 because of this p2 is unchanged in main as it was never truly modified by reference in which it would have swapped p1 and p2 in main.
+ * So now you might be confused because during our fun method we did set p1 equal to p2 and p2 equal to p1. Since these are pass via value we set p1 x and y to 4. Afterwards, we just swapped the values of p1 to p2. Meaning that p2 in fact was point to p1 because of this p2 is unchanged in main as it was never truly modified by reference in which it would have swapped p1 and p2 in main.
 
 * Factories: While Java isn't the only OO language to implement factories, I find these unique. They are unique because they are objects that create other objects. These factories can be used to determine what type of object should be made then creating that new object and returning it. Below is an example of such an instance where this would be needed.
 ```
