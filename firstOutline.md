@@ -8,7 +8,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 #### _Each item will be found within the 'Topics' folder and will be listed as its own folder (within 'Topics'). The documents inside will consist of a comparison document explaining and comparing the topic in each language and code examples to further demonstrate the differences._
 ~~Birth~~
 * This topic will go over the factors that led to each languages' genesis.
-* written by: **Payton Hosna**
+* written by: **Payton Hosna** (1)
 * reviewed by:
 ### Unique Features
 * This topic will go over any special or unique features provided by this language.
@@ -16,19 +16,19 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Name Spaces
 * This topic will go over the uses and implementations of name spaces.
-* written by: **David Duenow**
+* written by: **David Duenow** (2)
 * reviewed by:
 ### Types
 * This topic will go over types within the languages and how they're used.
-* written by: **David Duenow**
+* written by: **David Duenow** (3)
 * reviewed by:
 ### Classes
 * This topic will go over how classes are implemented and used.
-* written by: **Matthew Romero Moore**
+* written by: **Matthew Romero Moore** (1)
 * reviewed by:
-### Instance Reference Name
+~~Instance Reference Name~~
 * This topic will go over keywords such as this, self, and super.
-* written by: **Payton Hosna**
+* written by: **Payton Hosna** (2)
 * reviewed by:
 ### Properties
 * This topic will go over the properties that classes may or may not have.
@@ -36,50 +36,50 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * reviewed by:
 ### Interfacing
 * This topic will go over how interfacing is implemented.
-* written by: **Matthew Romero Moore**
+* written by: **Matthew Romero Moore** (2)
 * reviewed by:
-### Inheritance and Extension
+~~Inheritance and Extension~~
 * This topic will go over inheritance and extensions of classes.
 * written by: 
-* started by: **Payton Hosna**
+* started by: **Payton Hosna** (3)
 * reviewed by:
 ### Reflection
 * This topic will go over reflection and its support by the languages.
-* written by: **David Duenow**
+* written by: **David Duenow** (4)
 * reviewed by:
-### Comparisons of References and Values
+~~Comparisons of References and Values~~
 * This topic will go over how values are compared.
-* written by: **Payton Hosna**
+* written by: **Payton Hosna** (4)
 * reviewed by:
 ### Null and Nil
 * This topic will go over how the languages use null and/ or nil.
-* written by: **Matthew Romero Moore**
+* written by: **Matthew Romero Moore** (3)
 * reviewed by:
 ### Errors and Exception Handling
 * This topic will go over how the languages deal with errors and exceptions.
-* written by: **Matthew Romero Moore**
+* written by: **Matthew Romero Moore** (4)
 * reviewed by:
-### Lambda Expression, Closures, and Functions as Types
+~~Lambda Expression, Closures, and Functions as Types~~
 * This topic will go over how the languages implement/ use lambda expressions, closures, and functions as types.
-* written by: **Payton Hosna**
+* written by: **Payton Hosna** (5)
 * reviewed by:
 ### Event Handlers and Listeners
 * This topic will go over how the languages implement/ use event handlers and listeners.
-* written by: **David Duenow**
+* written by: **David Duenow** (5)
 * reviewed by:
-### Singleton
+~~Singleton~~
 * This topic will go over how the languages implement singletons.
-* written by: **Payton Hosna**
+* written by: **Payton Hosna** (6)
 * reviewed by:
 ### Procedural Programming
 * This topic will go over the languages' support of procedural programming.
-* written by: **Matthew Romero Moore**
+* written by: **Matthew Romero Moore** (5)
 * reviewed by:
 ### Functional Programming
 * This topic will go over the languages' support of functional programming.
-* written by: **Functional Programming*
+* written by: **Matthew Romero Moore** (6)
 * reviewed by:
 ### Multithreading
 * This topic will go over the languages' use of multithreading.
-* written by: **David Duenow**
+* written by: **David Duenow** (6)
 * reviewed by:
