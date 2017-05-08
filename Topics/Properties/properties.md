@@ -253,6 +253,7 @@ strawberry.strawberriesEaten()
 <br></br>
 ## Comparing
 ### Setters and Getters
+Swift's syntax does not require the user to declare an access level, unless they wish to specify it on individual types. Additionally, Swift does not require a mutator and an accessor for publicly declared variables. As a result the usage of setters and getters in Swift is not as common a task as it is in Java.
 ### Backing Variables
 ### Computed Properties
 Swift and Java computed variables are the same thing stated in different things. In addition, computed variables in Swift can be more unique and can be a combination of multiple stored properties on the struct/ class. Each variable as a getter and setter associated with it, but Swift's is more direcly associated with the computed property. With Java, there doesn't *need* to be a variable associated with the getters and setters. 
