@@ -12,7 +12,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * written by: **Payton Hosna** 
 ### Unique Features
 * This topic will go over any special or unique features provided by this language.
-* written by:
+* written by: **MRM and DD**
 ### Name Spaces
 * This topic will go over the uses and implementations of name spaces.
 * written by: **David Duenow** 
@@ -27,7 +27,7 @@ Provided by David Duenow, Payton Hosna, Matthew Romero Moore
 * written by: **Payton Hosna** 
 ### Properties
 * This topic will go over the properties that classes may or may not have.
-* written by:
+* written by: **MRM, DD, and PH**
 ### Interfacing
 * This topic will go over how interfacing is implemented.
 * written by: **Matthew Romero Moore** 
