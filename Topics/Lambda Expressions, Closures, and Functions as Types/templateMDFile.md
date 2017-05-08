@@ -1,12 +1,33 @@
-# Hello!
-## Please use me to develop the documentation for this topic!
+# Lambda Expression, Closures, and Functions as Types
+#### *This document will explain what lambda expressions/ closures are and how and why they're used.* 
 
-# I'm and h1!
-## I'm and h2!
-### I'm and h3!
+<br></br>
+## Lambda Expressions, Closures, and Functions as Types
+A function as a type is a function stored in a variable. A lambda expression and closure are ADD HERE. Lambda expression can only be implemented with a function inside a functional interface; a functional interface is ADD HERE. These eliminate the need to create  ADD HERE.
 
-* I'm and unordered list
-	* I'm a sub unordered list!
 
-1. I'am an ordered list.
-	1. I'm a sub ordered list!
+<br></br>
+## Java's Implementation
+```java
+```
+
+<br></br>
+## Swift's Implementation
+```python
+
+```
+
+
+<br></br>
+## Comparing
+
+
+
+
+
+
+
+
+
+
+
