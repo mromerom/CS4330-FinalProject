@@ -3,7 +3,9 @@
 
 <br></br>
 ## Lambda Expressions, Closures, and Functions as Types
-A function type is what the function takes in as parameters and returns; functions do not have to receive or return anything. A lambda expression and closure are ADD HERE. Lambda expression can only be implemented with a function inside a functional interface; a functional interface is ADD HERE. These eliminate the need to create  ADD HERE. Closures can easily be created as functions and/ or stored into variables to easily call the function.
+A function type is what the function takes in as parameters and returns; functions do not have to receive or return anything. A lambda expression and closure are ways to implement functions. Lambda expressions are anonymous functions and can only be implemented with a function inside a functional interface; a functional interface is ADD HERE. These eliminate the need to create  ADD HERE. Closures can easily be created as functions and/ or stored into variables to easily call the function. Closures are much more versatile than lambda expressions and can access variables not in its parameter list.
+
+
 
 
 <br></br>
@@ -190,12 +192,15 @@ var fruitAndBreadClosure = {
 #      and SEND the closure to the function
 fruitAndBread(fruit: fName, bread: bName, closure: fruitAndBreadClosure)
 
+# comments in swift are // and /*comment here*/
+#   git does not support swift md so python is used
+#   which is also why -> is highlighted in red
 ```
 
 
 <br></br>
 ## Comparing
-
+Java only allows for lambda expressions in a specific circustance. 
 
 
 
