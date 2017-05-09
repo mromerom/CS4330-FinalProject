@@ -6,6 +6,7 @@
 ### Setters and Getters
 Setters (also known as *mutators*) and getters (also known as *accessors*) are used to control changes to a variable. Setters and getters allow for finer control of access rights, and are instrumental in the property of encapsulation. As their names imply, a setter will set the data, and the getter will get the data (while protecting it from being accessed by external modules).
 ### Backing Variables
+A backing variable is a private variable that stores data exposed by a public property. These are used with getters and setters to modify these private variables. The data being sent into a setter or received from a getter might be modified before it is made public adding a layer of protection to how your data is processed inside a method or class. Below will be coded examples for Java and Swift.
 ### Computed Properties
 in Swift, a computed property is a property that has a getter and setter applied to it, and the computed property is not stand-alone; it has another variable(s) in the same struct or class that it uses to 'compute' itself (itself being the computed property/ a new property). In Java, the variable itself is set to private, and set and get functions are 'attached' to it, aka. writing functions called get<variable_name> and set<variable_name> (see the Java computed properties example).
 
@@ -28,6 +29,15 @@ public class Student {
 ```
 ### Backing Variables
 ```java
+private Integer age;
+
+public void setAge(int age){
+   this.age = age;
+}
+
+public void getAge(){
+   return this.age;
+}
 ```
 ### Computed Properties
 ```java
@@ -130,8 +140,24 @@ var variableName: dataType {
 }
 ```
 ### Backing Variables
-```python
+```Swift
+struct Processor {
+    var mhz: Double
+    init(mhz: Double) {
+        self.mhz = mhz
+    }
+    var ghz: Double {
+        get {
+            return mhz * 0.001
+        }
+        set(newGhz) {
+            self.ghz = newGhz
+            self.mhz = newGhz * 1000
+        }
+    }
+}
 ```
+Example from [SyntaxDB](https://syntaxdb.com/ref/swift/getters-setters)
 ### Computed Properties
 ```python
 class Cabbage{
